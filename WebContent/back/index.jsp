@@ -100,33 +100,46 @@
                         <div class="sidebar-content">
                             <!-- Profile -->
                             <div class="sidebar-section">
+                            	<span>${msg }</span>
                                 <h2 class="text-light">Profile</h2>
-                                <form action="index.html" method="post" class="form-control-borderless" onsubmit="return false;">
+                                <form action="${pageContext.request.contextPath }/ChangeProfileServlet" method="post" class="form-control-borderless" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <label for="side-profile-name">Name</label>
-                                        <input type="text" id="side-profile-name" name="side-profile-name" class="form-control" value="John Doe">
+                                        <label for="side-profile-name">UserName</label>
+                                        <input type="text" id="side-profile-name" name="username" class="form-control" value="${manage.username }">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="side-profile-email">Phone</label>
+                                        <input type="number" id="side-profile-email" name="phone" class="form-control" value="${manage.phone }">
                                     </div>
                                     <div class="form-group">
                                         <label for="side-profile-email">Email</label>
-                                        <input type="email" id="side-profile-email" name="side-profile-email" class="form-control" value="john.doe@example.com">
+                                        <input type="email" id="side-profile-email" name="email" class="form-control" value="${manage.email }">
                                     </div>
                                     <div class="form-group">
                                         <label for="side-profile-password">New Password</label>
-                                        <input type="password" id="side-profile-password" name="side-profile-password" class="form-control">
+                                        <input type="password" id="side-profile-password" name="password" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label for="side-profile-password-confirm">Confirm New Password</label>
-                                        <input type="password" id="side-profile-password-confirm" name="side-profile-password-confirm" class="form-control">
+                                        <input type="password" id="side-profile-password-confirm" name="password-confirm" class="form-control">
                                     </div>
-                                    <div class="form-group remove-margin">
-                                        <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('close-sidebar-alt');">Save</button>
+                                 
+                                    <div class="form-group" style="height:75px">
+                                            <label class="col-md-8 control-label" for="example-file-input">ChangeAvatar</label>
+                                            <div class="col-md-9">
+                                                <input type="file" id="example-file-input" name="avatar">
+                                            </div>
+                                       </div>
+                                     <div class="form-group remove-margin">
+                                        	<!-- <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('close-sidebar-alt');">Save</button> -->
+                                        	<button type="submit" class="btn btn-effect-ripple btn-primary">Save</button>
                                     </div>
                                 </form>
                             </div>
                             <!-- END Profile -->
 
                             <!-- Settings -->
-                            <div class="sidebar-section">
+                           <!--  <div class="sidebar-section">
                                 <h2 class="text-light">Settings</h2>
                                 <form action="index.html" method="post" class="form-horizontal form-control-borderless" onsubmit="return false;">
                                     <div class="form-group">
@@ -151,7 +164,7 @@
                                         <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('close-sidebar-alt');">Save</button>
                                     </div>
                                 </form>
-                            </div>
+                            </div> -->
                             <!-- END Settings -->
                         </div>
                         <!-- END Sidebar Content -->
@@ -413,50 +426,13 @@
 
                         <!-- Right Header Navigation -->
                         <ul class="nav navbar-nav-custom pull-right">
-                            <!-- Search Form -->
-                            <li>
-                                <form action="#" method="post" class="navbar-form-custom">
-                                    <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Search..">
-                                </form>
-                            </li>
-                            <!-- END Search Form -->
-
-                            <!-- Alternative Sidebar Toggle Button -->
-                            <li>
-                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt');this.blur();">
-                                    <i class="gi gi-settings"></i>
-                                </a>
-                            </li>
-                            <!-- END Alternative Sidebar Toggle Button -->
-
                             <!-- User Dropdown -->
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="${pageContext.request.contextPath }/back/static/AppUI/img/placeholders/avatars/avatar9.jpg" alt="avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="dropdown-header">
-                                        <strong>ADMINISTRATOR</strong>
-                                    </li>
-                                    <li>
-                                        <a href="page_app_email.html">
-                                            <i class="fa fa-inbox fa-fw pull-right"></i>
-                                            Inbox
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="page_app_social.html">
-                                            <i class="fa fa-pencil-square fa-fw pull-right"></i>
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="page_app_media.html">
-                                            <i class="fa fa-picture-o fa-fw pull-right"></i>
-                                            Media Manager
-                                        </a>
-                                    </li>
-                                    <li class="divider"><li>
+                                   
                                     <li>
                                         <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt');">
                                             <i class="gi gi-settings fa-fw pull-right"></i>
@@ -464,13 +440,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="page_ready_lock_screen.html">
-                                            <i class="gi gi-lock fa-fw pull-right"></i>
-                                            Lock Account
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_login.html">
+                                        <a href="${pageContext.request.contextPath }/LoginoutServlet">
                                             <i class="fa fa-power-off fa-fw pull-right"></i>
                                             Log out
                                         </a>

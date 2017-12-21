@@ -29,4 +29,33 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginoutServlet</display-name>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.LoginoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <url-pattern>/LoginoutServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>CheckLoginFilter</display-name>
+    <filter-name>CheckLoginFilter</filter-name>
+    <filter-class>com.xinxianggov.filter.CheckLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CheckLoginFilter</filter-name>
+    <url-pattern>/CheckLoginFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChangeProfileServlet</display-name>
+    <servlet-name>ChangeProfileServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.ChangeProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeProfileServlet</servlet-name>
+    <url-pattern>/ChangeProfileServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
