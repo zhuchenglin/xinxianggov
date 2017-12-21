@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>仿新乡政府官网后台管理</title>
+        <title>Background management of the official website of Xinxiang government</title>
 
         <meta name="description" content="AppUI is a Web App Bootstrap Admin Template created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -56,7 +56,7 @@
         <div id="login-container">
             <!-- Login Header -->
             <h1 class="h2 text-light text-center push-top-bottom animation-pullDown">
-                <i class="fa fa-cube text-light-op"></i> <strong>新乡市政府官网后台管理</strong>
+                <i class="fa fa-cube text-light-op"></i> <strong>Background management of the official website of Xinxiang government</strong>
             </h1>
             <!-- END Login Header -->
 
