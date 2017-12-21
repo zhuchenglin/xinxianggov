@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.xinxiang.gov.cn/zwfw.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Title</title>
+    <script language="JavaScript" type="text/javascript" src="./jquery.js"></script>
+</head>
+<body>
+<style>
+a{text-decoration:none}
+    li{list-style: none}*{padding:0;margin:0}
+    /*县区链接*/
+    .city_cons{width:46%;float:left;    padding-left: 50px;background-color:#eee;height:200px;}
+    .c01 span,
+    .c01_ul01
+    {
+        float: left;
+    }
+    .city_cons ul
+    {
+        width: 90%;
+        margin: 13px 0 0 0;
+    }
+    .city_cons span
+    {
+        font-size: 16px;
+        line-height: 54px;
+
+        padding: 0 14px 0 25px;
+
+        color: #0070c0;
+    }
+    .city_cons ul li
+    {
+        line-height: 34px;
+
+        display: block;
+        float: left;
+
+        min-width: 74px;
+        height: 34px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+
+        text-align: center;
+    }
+    .city_cons ul li a
+    {
+        font-size: 16px;
+
+        display: block;
+
+        padding: 0 6px;
+
+        color: #000;
+    }
+    .line
+    {
+        display: block;
+        clear: both;
+
+        border-bottom: 1px dotted #0070c0;
+    }
+    /* 市级 */
+    .city01
+    {
+        text-align: center;
+
+        color: #fff;
+        border-radius: 5px;
+        background: #21b5ed;
+    }
+    /* .city04
+     {
+         color: #fff;
+         border-radius: 5px;
+         background: #40bf40;
+         width: initial;
+     }*/
+
+    /* 县级 */
+    .city02
+    {
+        color: #fff;
+        border-radius: 5px;
+        background: #ff923f;
+    }
+    /* 街道 */
+    .city03
+    {
+        color: #fff;
+        border-radius: 5px;
+        background: #fe7c7c;
+    }
+    /*便民服务*/
+    .bannerFn1
+    {
+        width:49%;    padding-top: 10px;background-color:#eee;height:200px;float:left
+    }
+
+    .bannerFn1 li
+    {
+        float: left;
+
+        width: 96px;
+        height: 100px;
+        margin-right: 2px;
+
+        transition: .2s;
+        text-align: center;
+
+        border-radius: 10px;
+        background: #fff;
+        background: rgba(255,255,255,.8);
+    }
+
+    .bannerFn1 li:hover
+    {
+        background: #fff;
+    }
+
+    .bannerFn1 li a i
+    {
+        line-height: 65px;
+
+        display: block;
+
+        width: 100px;
+        height: 60px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .bannerFn1 li a p
+    {
+        font-size: 15px;
+
+        color: #00aeff;
+    }
+
+    .bannerFn1 li.f1
+    {
+        background: #0580ba;
+        background: rgba(5,128,186,.8);
+    }
+    .bannerFn1 li.f1:hover
+    {
+        background: #ff6767;
+        background: rgba(255,82,82,0.7);
+    }
+
+    .bannerFn1 li.f1 a p
+    {
+        font-weight: bold;
+
+        color: #fff;
+    }
+
+
+    .bannerFn1 li a
+    {
+        display: block;
+
+        width: 100px;
+        height: 100px;
+
+        text-decoration: none !important;
+
+        border-radius: 10px;
+    }
+
+
+
+
+    .bannerFn1 li.f5
+    {
+        position: relative;
+    }
+
+
+    .bannerFn1 li.f5 .down
+    {
+        position: absolute;
+        bottom: -9px;
+        left: 48px;
+        display: none;
+    }
+
+
+    .bannerFn1 li.f5 ul
+    {
+        position: absolute;
+        right: 0;
+        bottom: -80px;
+
+        display: none;
+
+        width: 487px;
+        padding: 10px 0;
+
+        border-radius: 10px;
+        background: #e9f5fd;
+    }
+
+
+
+    .bannerFn1 li.f5 ul li
+    {
+        font-size: 14px;
+        line-height: 40px;
+
+        float: left;
+
+        width: initial;
+        height: 40px;
+        margin: 0 6px;
+        /* display: none; */
+
+        text-align: center;
+
+        background: #d9edfc;
+    }
+
+    .bannerFn1 li.f5 ul li:hover
+    {
+        display: block;
+    }
+
+
+    .bannerFn1 li.f5 ul li a
+    {
+        line-height: 40px;
+
+        display: block;
+
+        width: 108px;
+        height: 40px;
+
+        color: #000;
+    }
+
+    img {
+        vertical-align: middle;
+        border: none;
+    }
+    .bannerFn1 li.f5 ul li a img
+    {
+        margin-right: 10px;
+    }
+
+</style>
+<div class="zilanm">
+    <ul class="bannerFn1">
+        <li class="f1">
+            <a target="_blank" href="http://117.158.91.68:8083/permissionitem_list_Sort.jspx?sortcode=root_qy_ztfl&amp;areaid=410700">
+                <i><img src="./b_icon01.png" alt=""></i>
+                <p>法人办事</p>
+            </a>
+        </li>
+        <li class="f1">
+            <a target="_blank" href="http://117.158.91.68:8083/permissionitem_grlist_Sort.jspx?sortcode=root_gr_ztfl&amp;areaid=410700">
+                <i><img src="./b_icon02.png" alt=""></i>
+                <p>自然人办事</p>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="http://117.158.91.68:8083/permissionitem_sxinfo/114107000055119427.jspx.jspx?orderBy=asc&amp;tdtl=top3&amp;areaid=410700">
+                <i><img src="./b_icon03.png" alt=""></i>
+                <p>部门服务</p>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="http://117.158.91.68:8083/xnjc/toxnjc2.jspx">
+                <i><img src="./b_icon04.png" alt=""></i>
+                <p>效能监察</p>
+            </a>
+        </li>
+        <li class="f5">
+            <a target="_blank" href="http://117.158.91.68:8083/index2.jspx?service=p">
+                <i><img src="./b_icon05.png" alt=""></i>
+                <p>公共服务</p>
+            </a>
+            <img class="down" src="./icoFn2Down.png" alt="" style="display: none;">
+            <ul style="display: none;">
+                <li><a target="_blank" href="http://www.xinxiang.gov.cn/zwfw.html"><img src="./icof51.png" alt="">公交信息</a></li>
+                <li><a target="_blank" href="http://www.xinxiang.gov.cn/zwfw.html"><img src="./icof52.png" alt="">缴费查询</a></li>
+                <li><a target="_blank" href="http://tianqi.2345.com/xinxiang/53986.htm"><img src="./icof53.png" alt="">天气预报</a></li>
+                <li><a target="_blank" href="http://www.xinxiang.gov.cn/zwfw.html"><img src="./icof54.png" alt="">社会保障</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="city_cons">
+        <ul class="c01_ul01">
+            <li id="410783" class="city_sub city04"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410783&amp;name=%E9%AB%98%E6%96%B0%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91%E5%8C%BA">高新技术开发区</a></li>
+            <li id="410703" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410703&amp;name=%E5%8D%AB%E6%BB%A8%E5%8C%BA">卫滨区</a></li>
+            <li id="410702" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410702&amp;name=%E7%BA%A2%E6%97%97%E5%8C%BA">红旗区</a></li>
+            <li id="410704" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410704&amp;name=%E5%87%A4%E6%B3%89%E5%8C%BA">凤泉区</a></li>
+            <li id="410711" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410711&amp;name=%E7%89%A7%E9%87%8E%E5%8C%BA">牧野区</a></li>
+            <li id="410721" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410721&amp;name=%E6%96%B0%E4%B9%A1%E5%8E%BF">新乡县</a></li>
+            <li id="410724" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410724&amp;name=%E8%8E%B7%E5%98%89%E5%8E%BF">获嘉县</a></li>
+            <li id="410726" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410726&amp;name=%E5%BB%B6%E6%B4%A5%E5%8E%BF">延津县</a></li>
+            <li id="410727" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410727&amp;name=%E5%B0%81%E4%B8%98%E5%8E%BF">封丘县</a></li>
+            <li id="410781" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410781&amp;name=%E5%8D%AB%E8%BE%89%E5%B8%82">卫辉市</a></li>
+            <li id="410782" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410782&amp;name=%E8%BE%89%E5%8E%BF%E5%B8%82">辉县市</a></li>
+            <li id="410784" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410784&amp;name=%E5%B9%B3%E5%8E%9F%E7%A4%BA%E8%8C%83%E5%8C%BA">平原示范区</a></li>
+            <li id="410374" class="city_sub"><a target="_blank" href="http://117.158.91.68:8083/regionitem_find.jspx?areaid=410374&amp;name=%E7%BB%8F%E6%B5%8E%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91%E5%8C%BA">经济技术开发区</a></li>
+            <li id="410700" class="city_sub"><a target="_blank" href="http://www.yyxxzfwzx.com/">原阳县</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    //banner公共服务
+    $('.bannerFn1 li.f5').hover(function() {
+        $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).fadeIn(300);
+        $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').show();
+    }, function() {
+        $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeOut(50);
+    });</script>
+
+</body></html>
