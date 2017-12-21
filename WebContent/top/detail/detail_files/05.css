@@ -1,0 +1,1446 @@
+/*=============页面整体样式===============*/
+
+BODY {
+       MARGIN: 0px;
+		margin-right: 0px;
+	background-color:#ffffff;  
+}
+body,td,th {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #FF4A00; TEXT-DECORATION: underline
+}
+.dhbgwenzi
+{ 
+height:2px;background:url(../image/img3/dian1.gif);font-weight: normal;padding-top:0px;  
+} 
+.dhbg1 
+{ 
+height:27px;background:url(../image/img3/24130.GIF);font-weight: normal;padding-top:0px;  cursor:move
+} 
+.dhbgbotton
+{ 
+height:160px;font-weight: normal;padding-top:0px;  cursor:move;
+background: url(rrw1.jpg);
+}
+.dhbgbotton1
+{ 
+height:140px;background:url(../image/img3/rrw.jpg);font-weight: normal;padding-top:0px;  cursor:move
+}
+.topding
+{ 
+width:1002px; height:23px;font-weight: normal;padding-top:0px;  cursor:move
+} 
+.topding1
+{ 
+width:778px; height:23px;background:url(../image/img3/tt2_02.jpg);font-weight: normal;padding-top:0px;  cursor:move
+}
+.dh2
+{ 
+width:778px; height:23px;background:url(../image/img3/daohang.jpg);font-weight: normal;padding-top:0px;  cursor:move
+} 
+.dh3
+{ 
+width:778px; height:23px;background:url(../image/img3/daohang.jpg);font-weight: normal;padding-top:0px;  cursor:move
+} 
+
+/*.top
+{ 
+width:1002px; height:156px;background:url(../image/img3/top1.jpg);font-weight: normal;padding-top:0px;  cursor:move
+}*/
+.topss
+{ 
+height:32px; font-weight: normal;padding-top:0px;  cursor:move;
+background: url(bg.GIF);
+}     
+.toplm
+{ 
+width:1002px;height:92px;background:url(../image/img3/tt2_03.jpg);font-weight: normal;padding-top:0px;  cursor:move
+}
+.toplmz
+{ 
+height:40px;background:url(../image/img3/top1dh1.JPG);font-weight: normal;padding-top:0px;  cursor:move
+}   
+.hong {
+	COLOR: #fa1800
+}
+A.hong:link {
+	COLOR: #fa1800; TEXT-DECORATION: none
+}
+A.hong:visited {
+	COLOR: #fa1800; TEXT-DECORATION: none
+}
+A.hong:hover {
+	COLOR: #ee0081; TEXT-DECORATION: none
+}
+.whitelanmu {
+FONT-SIZE: 12px; COLOR: #423B04; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whitelanmu:link {
+	COLOR: #423B04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitelanmu:visited {
+	COLOR: #423B04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitelanmu:hover {
+	COLOR: #FF7100; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.whitemore {
+FONT-SIZE: 12px; COLOR: #FF7100; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+.whitemore1{
+FONT-SIZE: 12px; COLOR: #FF7100; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whitemore:link {
+	COLOR: #FF7100; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitemore:visited {
+	COLOR: #FF7100; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitemore:hover {
+	COLOR: #423B04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.whitedaohang {
+FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 21px; TEXT-DECORATION: none	
+}
+A.whitedaohang:link {
+	COLOR: #000000; LINE-HEIGHT: 21px; TEXT-DECORATION: none
+}
+A.whitedaohang:visited {
+	COLOR: #000000; LINE-HEIGHT: 21px; TEXT-DECORATION: none
+}
+A.whitedaohang:hover {
+	COLOR: #D83C06; LINE-HEIGHT: 21px; TEXT-DECORATION: none
+}
+.whitezuidi {
+FONT-SIZE: 12px; COLOR: #313130; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whitezuidi:link {
+	COLOR: #313130; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitezuidi:visited {
+	COLOR: #313130; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitezuidi:hover {
+	COLOR: #FF4200; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.whitedidh {
+FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whitedidh:link {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitedidh:visited {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whitedidh:hover {
+	COLOR: #FF4200; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.whitedingyou {
+FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 18px; PADDING-TOP: 3px;TEXT-DECORATION: none	
+}
+A.whitedingyou:link {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; PADDING-TOP: 3px;TEXT-DECORATION: none
+}
+A.whitedingyou:visited {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; PADDING-TOP: 3px;TEXT-DECORATION: none
+}
+A.whitedingyou:hover {
+	COLOR: #FF4200; LINE-HEIGHT: 180%; PADDING-TOP: 3px;TEXT-DECORATION: none
+}
+.whiteding {
+FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whiteding:link {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whiteding:visited {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whiteding:hover {
+	COLOR: #FF3500; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.whiteweizhi {
+FONT-SIZE: 12px; COLOR: #2D2C2C; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.whiteweizhi:link {
+	COLOR: #F2D2C2C; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whiteweizhi:visited {
+	COLOR: #2D2C2C; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.whiteweizhi:hover {
+	COLOR: #FF3500; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.white {
+FONT-SIZE: 12px; COLOR: #FFFFFF; LINE-HEIGHT: 18px; TEXT-DECORATION: none	
+}
+A.white:link {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.white:visited {
+	COLOR: #ffffff; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.white:hover {
+	COLOR: #ffe66a; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.hbuttons a{
+width: 94px;
+height: 40px;
+float: left;
+display: inline;
+margin-right:1px;
+background-image:url(../image/img3/8899.jpg);
+background-repeat: no-repeat;
+padding-top: 8px;
+text-align:center;
+}
+.hbuttons a:hover{
+background-image:url(../image/img3/88991.jpg);
+width: 94px;
+height: 40px;
+}
+
+.xin1zuo{ 
+ height:30px;background:url(../image/img3/1fser_01.gif);font-weight: normal;padding-top:0px;
+}
+.xin1you{
+width:10px; height:30px;background:url(../image/img3/1fser_02.gif);font-weight: normal;padding-top:0px;
+}
+.xin2zuo{ 
+ background:url(../image/img3/1fser_03.gif);font-weight: normal;padding-top:0px;
+}
+.xin2you{ 
+width:10px; height:9px;background:url(../image/img3/1fser_04.gif);font-weight: normal;padding-top:0px;
+}
+.xin3zuo{ 
+ height:10px; background:url(../image/img3/1fser_06.gif);font-weight: normal;padding-top:0px;
+}
+.xin3you{ 
+width:10px; height:10px;background:url(../image/img3/1fser_07.gif);font-weight: normal;padding-top:0px;
+}
+
+.treeColor
+{ 
+background-color:#ffffff;  
+} 
+.boxx5{
+    BORDER-RIGHT: #D1CE7F 1px solid; BORDER-LEFT: #D1CE7F 1px solid; BORDER-BOTTOM: #D1CE7F 1px solid; BORDER-TOP: #D1CE7F 1px solid;
+	background:url(../image/img3/zhucedd.gif); height:18px
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffcc00; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+.title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.title3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000099; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+.title4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+.title5 {
+	FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+.title6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #000099; LINE-HEIGHT: 22px; TEXT-DECORATION: none
+}
+.title7 {
+	FONT-WEIGHT: bold; FONT-SIZE: 25px; COLOR: #cc0000; LINE-HEIGHT: 35px; TEXT-DECORATION: none
+}
+/*=============2级页面左边几个样式=============*/
+.2jibjj
+{ 
+ background-color:#FEFBEF;	
+}
+.2jidaohang
+{ 
+ height:40px;background:url(../image/img3/wwwyyyy.gif);font-weight: normal;
+}
+.2jidaohangwz
+
+ {  font-size: 14px;FONT-WEIGHT: bold;	float:left; color:#000000; filter:Dropshadow(offx=1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=1,color=#ffffff) Dropshadow(offx=-1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=-1,color=#ffffff);
+}
+
+.2jilanmu
+{ 
+ height:30px;background:url(../image/img3/weuu.gif);font-weight: normal;
+}
+.2jilanmuwz {
+	color: #CC7A04;
+	font-size: 12px;FONT-WEIGHT: bold;	
+}
+A.2jilanmuwz:link {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.2jilanmuwz:visited {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.2jilanmuwz:hover {
+	COLOR: #BA0505; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.2jilanmuxin
+{ 
+ width:186px;height:216px;background:url(../image/img3/rrr.jpg);font-weight: normal;
+}
+
+
+
+
+.sjibjj
+{ 
+ background-color:#FEFBEF;	
+}
+.sjidaohang
+{ 
+ height:40px;background:url(../image/img3/wwwyyyy.gif);font-weight: normal;
+}
+.sjidaohangwz
+
+ {  font-size: 14px;FONT-WEIGHT: bold;	float:left; color:#000000; filter:Dropshadow(offx=1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=1,color=#ffffff) Dropshadow(offx=-1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=-1,color=#ffffff);
+}
+
+.sjilanmu
+{ 
+ height:30px;background:url(../image/img3/weuu.gif);font-weight: normal;
+}
+.sjilanmuwz {
+	color: #CC7A04;
+	font-size: 12px;FONT-WEIGHT: bold;	
+}
+A.sjilanmuwz:link {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.sjilanmuwz:visited {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.sjilanmuwz:hover {
+	COLOR: #BA0505; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.sjilanmuxin
+{ 
+ width:186px;height:216px;background:url(../image/img3/rrr.jpg);font-weight: normal;
+}
+
+
+.tjibjj
+{ 
+ background-color:#FEFBEF;	
+}
+.tjidaohang
+{ 
+ height:40px;background:url(../image/img3/wwwyyyy.gif);font-weight: normal;
+}
+.tjidaohangwz
+
+ {  font-size: 14px;FONT-WEIGHT: bold;	float:left; color:#000000; filter:Dropshadow(offx=1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=1,color=#ffffff) Dropshadow(offx=-1,offy=0,color=#ffffff) Dropshadow(offx=0,offy=-1,color=#ffffff);
+}
+
+.tjilanmu
+{ 
+ height:30px;background:url(../image/img3/weuu.gif);font-weight: normal;
+}
+.tjilanmuwz {
+	color: #CC7A04;
+	font-size: 12px;FONT-WEIGHT: bold;	
+}
+A.tjilanmuwz:link {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.tjilanmuwz:visited {
+	COLOR: #CC7A04; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+A.tjilanmuwz:hover {
+	COLOR: #BA0505; LINE-HEIGHT: 180%; TEXT-DECORATION: none
+}
+.tjilanmuxin
+{ 
+ width:186px;height:216px;background:url(../image/img3/rrr.jpg);font-weight: normal;
+}
+/*=============2级页面右边几个样式=============*/
+.rery{
+height:28px;background:url(../image/img3/777y.gif	);font-weight: normal;
+}
+.rerywz {
+	color: #CC7A04;
+	font-size: 12px;FONT-WEIGHT: bold;	
+}
+.rerybg{
+background-color:F8E595;	
+}
+/*=============操作DIV样式=============*/
+.DragContainer {	/*区域样式排版样式*/
+	BORDER-RIGHT: #ff9900 0px solid;
+	BORDER-LEFT: #ff9900 0px solid;
+	BORDER-TOP: #ff9900 0x solid;
+	BORDER-BOTTOM: #ff9900 0x solid;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTT2M: 0px;
+	MARGIN: 0px;
+	FLOAT: left;
+	width=100%;
+	HEIGHT: 100%;
+}
+
+.DragBox {		/*未拖动时DIV的样式*/
+	BORDER-RIGHT: #FC5534 0px solid;
+	BORDER-LEFT: #FC5534 0px solid;
+	BORDER-TOP: #FC5534 0px solid;
+	BORDER-BOTTOM: #FC5534 0px solid;
+	PADDING-RIGHT: 1x;
+	PADDING-LEFT: 1px;
+	PADDING-TOP: 0px;
+	WIDTH: 100%;
+	CURSOR: pointer;
+	FONT-SIZE: 10px;
+	MARGIN-BOTTOM: 0px;
+	FONT-FAMILY: verdana, tahoma, arial;
+}
+.normal{	/*拖动时DIV的样式*/
+    position:absolute;/*重要*/
+    width:250px;
+    border:1px solid #666666;
+}
+.over{		/*鼠标移动到DIV边缘时的样式*/
+    position:absolute;/*重要*/
+    width:250px;
+    border:1px solid #666666;
+    background-color:#f3f3f3;
+	filter: alpha(opacity=50);
+}
+.Navigation{
+	BORDER-RIGHT: #FC5534 0px solid;
+	BORDER-LEFT: #FC5534 0px solid;
+	BORDER-TOP: #FC5534 0px solid;
+	BORDER-BOTTOM: #FC5534 0px solid;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 10px;
+	WIDTH: 58px;
+	HEIGHT:15px;
+	CURSOR: move;
+	FONT-FAMILY: verdana, tahoma, arial;
+	FLOAT:left;
+} 
+#Layer1 {
+	position:absolute;
+	left:800px;
+	top:150px;
+	width:240px;
+	height:150px;
+	border:1px solid #666666;
+	background-color:#FFFFFF;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:800px;
+	top:150px;
+	width:240px;
+	height:150px;
+	border:1px solid #666666;
+	background-color:#FFFFFF;
+	z-index:1;
+}
+.menu_back{
+background:url(../image/img11/weuu.gif);
+background-repeat:no-repeat;
+}
+
+/*=============红色版=============*/
+/*=============井永生新添加的样式=============*/
+	/*=============首页样式===========================================================*/
+.backgolor{
+background-color:#feb113;
+}
+..fontcolor{
+color:#f76809;
+}
+.index_top_buttom{
+background:url(/upload/070906/chinavvv_0709060900475930.jpg);
+background-repeat:no-repeat;
+}
+.index_jinrixinwen_back{
+background:url(/upload/070823/chinavvv_0708230821236250.jpg);
+}
+
+.index_top_top{
+background:url(/upload/070902/chinavvv_0709021237521870.jpg);
+}
+.index_top_right{
+background:url(/upload/070902/chinavvv_0709021238490780.jpg);
+}
+.index_top_middle{
+background:url(/upload/070902/chinavvv_0709021238037650.jpg);
+}
+.index_top_middle1{
+background:url(/upload/070902/chinavvv_0709021238370780.jpg);
+}
+
+.index_top_under{
+background:url(/upload/070902/chinavvv_0709021238133280.jpg);
+}
+.index_top_imgright{
+background:url(/upload/070902/chinavvv_0709021238261870.jpg);
+background-repeat:no-repeat;
+}
+.index_top_imgleft{
+background:url(/upload/070906/chinavvv_0709061925034530.jpg);
+background-repeat:no-repeat;
+}
+.index_jinrixinwen{
+background:url(/upload/070823/chinavvv_0708230820456250.jpg);
+background-repeat:no-repeat;
+}
+.index_zhengwuxinxi{
+background:url(/upload/070823/chinavvv_0708230822142340.jpg);
+}
+.index_zhengwu{
+background:url(/upload/070907/chinavvv_0709071520264370.jpg);
+
+}
+.index_xianqu{
+background:url(/upload/070823/chinavvv_0708230822376560.jpg);
+}
+.index_benmen{
+background:url(/upload/070823/chinavvv_0708230823004060.jpg);
+
+}
+.topding{
+ width:1002px; height:23px;
+} 
+.index_index08-24q2_15{
+background:url(../image/img11/index08-24q2_15.jpg);
+background-repeat: no-repeat;
+}
+.index_middlezhengwu{
+background:url(/upload/070816/chinavvv_0708160257158580.jpg);
+background-repeat: no-repeat;
+}
+/*==========================*/
+.index_index08-24q2_15{
+background:url(/upload/070827/chinavvv_0708270921346360.jpg);
+background-repeat: no-repeat;
+}
+
+
+
+
+/*=============政务公开样式================================================================*/
+.zhengwugongkaidaohang_left{
+background:url(/upload/070907/chinavvv_0709070858202030.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkaidaohang_back{
+background:url(/upload/070907/chinavvv_0709070903211560.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_right{
+background:url(/upload/070907/chinavvv_0709070903348120.gif);
+background-repeat: no-repeat;
+}
+
+
+
+.zhengwugongkai_gundongtop{
+background:url(/upload/070830/chinavvv_0708301759463430.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_gundongunder{
+background:url(/upload/070830/chinavvv_0708301800026710.gif);
+background-repeat: no-repeat;
+}
+
+.zhengwugongkai_zhengwuxinxi{
+background:url(/upload/070910/chinavvv_0709100925574680.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_zhengwuxinxidi{
+background:url(/upload/070910/chinavvv_0709100925189060.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_zhengwuxinback{
+background:url(/upload/070830/chinavvv_0708301801339370.gif);
+
+}
+.zhengwugongkai_zhengwuxinxiunder{
+background:url(/upload/070830/chinavvv_0708301801113280.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_xinxigongkaitop{
+background:url(/upload/070830/chinavvv_0708301806067650.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_xinxigongkaimiddle{
+background:url(/upload/070906/chinavvv_0709060926049370.gif);
+background-repeat: no-repeat;
+}
+
+.zhengwugongkai_xinxigongkaiback{
+background:url(/upload/070830/chinavvv_0708301809195000.gif);
+
+}
+.zhengwugongkai_gongkaiunder{
+background:url(/upload/070830/chinavvv_0708301806377180.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_zhengfuwenjianback{
+background:url(/upload/070830/chinavvv_0708301804063900.gif);
+}
+.zhengwugongkai_zhengfuwenjiantop{
+background:url(/upload/070830/chinavvv_0708301803150620.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_wenjianmiddle{
+background:url(/upload/070908/chinavvv_0709081707070310.gif);
+background-repeat: no-repeat;
+background-position:3px;
+
+}
+.zhengwugongkai_wenjianback{
+background:url(/upload/070830/chinavvv_0708301804063900.gif);
+
+
+}
+zhengwugongkai_wenjiandi{
+background:url(/upload/070830/chinavvv_0708301803437030.gif);
+
+}
+.zhengwugongkai_huiyitop{
+background:url(/upload/070830/chinavvv_0708301803150620.gif);
+background-repeat: no-repeat;
+
+}
+.zhengwugongkai_huiyimiddle{
+background:url(/upload/081114/chinavvv_0811141601107310.jpg);
+background-repeat: no-repeat;
+background-position:3px;
+}
+.zhengwugongkai_huiyidi{
+background:url(/upload/070830/chinavvv_0708301803437030.gif);
+background-repeat: no-repeat;
+}
+.zhengwugongkai_huiyiback{
+
+background:url(/upload/070830/chinavvv_0708301804063900.gif);
+
+}
+.zhengwugonggai_renshirenmiantop{
+
+background:url(/upload/070830/chinavvv_0708301803150620.gif);
+background-repeat: no-repeat;
+}
+.renshiremianmiddle{
+background:url(/upload/070830/chinavvv_0708301804297030.gif);
+background-repeat: no-repeat;
+background-position:3px;
+}
+.reshishirenmian_under{
+background:url(/upload/070830/chinavvv_0708301803437030.gif);
+background-repeat: no-repeat;
+
+}
+/* 应急管理*/
+.yingjitop{
+background:url(/upload/070830/chinavvv_0708301803150620.gif);
+background-repeat: no-repeat;
+
+}
+.yingjiback{
+background:url(/upload/070830/chinavvv_0708301804063900.gif);
+}
+.yinjimiddle{
+background:url(/upload/070830/chinavvv_0708301805116870.gif);
+background-repeat: no-repeat;
+background-position:3px;
+}
+.yingjidi{
+background:url(/upload/070830/chinavvv_0708301803437030.gif);
+
+}
+/* 发展规划*/
+.fazhanguifatop{
+
+background:url(/upload/070830/chinavvv_0708301803150620.gif);
+background-repeat: no-repeat;
+
+}
+.fazhangguimiddle{
+background:url(/upload/070830/chinavvv_0708301805257650.gif);
+background-repeat: no-repeat;
+background-position:3px;
+}
+/* 计划总结*/
+.jihuazongjiemiddle{
+background:url(/upload/070905/chinavvv_0709051129366710.gif);
+background-repeat: no-repeat;
+}
+.jihuazhongjieunder{
+background:url(/upload/070830/chinavvv_0708301803437030.gif);
+background-repeat: no-repeat;
+}
+/*政府领导*/
+.lingdaoback{
+
+background:url(/upload/070830/chinavvv_0708301801512340.gif);
+background-repeat: no-repeat;
+
+}
+/*规范性文件*/
+.guihuanwenjiantop{
+background:url(/upload/070905/chinavvv_0709051132379060.gif);
+background-repeat: no-repeat;
+}
+.guihuanxingwenjianmidd{
+background:url(/upload/070905/chinavvv_0709051136079210.gif);
+background-repeat: no-repeat;
+}
+.guihuanxingwenjiandi{
+background:url(/upload/070905/chinavvv_0709051133186400.gif);
+background-repeat: no-repeat;
+
+}
+/*政策解读*/
+.zhenchejiedu{
+background:url(/upload/070907/chinavvv_0709071735153750.gif);
+background-repeat: no-repeat;
+
+}
+/*国家法规*/
+.guojiafaguiback{
+background:url(/upload/070905/chinavvv_0709051134439840.gif);
+
+}
+.guojiafagui{
+
+background:url(/upload/070905/chinavvv_0709051047152030.gif);
+background-repeat: no-repeat;
+
+}
+/*河南法规*/
+.henanfagui{
+background:url(/upload/070905/chinavvv_0709051047152030.gif);
+background-repeat: no-repeat;
+}
+/*招标公示*/
+.zhaobiaogongshi{
+background:url(/upload/070830/chinavvv_0708301812143430.gif);
+background-repeat: no-repeat;
+}
+/*政府采购*/
+.zhengfucaigou{
+background:url(/upload/070830/chinavvv_0708301811423750.gif);
+background-repeat: no-repeat;
+}
+.zhengfucaigoutop{
+background:url(/upload/070830/chinavvv_0708301811307500.gif);
+background-repeat: no-repeat;
+}
+.jieguogongshi{
+background:url(/upload/070830/chinavvv_0708301821269060.gif);
+background-repeat: no-repeat;
+}
+.zhengfucaigouright{
+
+background:url(/upload/070830/chinavvv_0708301812347030.gif);
+background-repeat: no-repeat;
+}
+.zhengfuzhaobiaodi{
+background:url(/upload/070830/chinavvv_0708301812520000.gif);
+background-repeat: no-repeat;
+}
+/*电子政务*/
+.dianzizhengwutop{
+background:url(/upload/070910/chinavvv_0709101752006870.gif);
+background-repeat: no-repeat;
+}
+.benshixiangguanwenjian{
+background:url(/upload/070910/chinavvv_0709101752561090.gif);
+background-repeat: no-repeat;
+}
+.zhengwuright{
+background:url(/upload/070830/chinavvv_0708301831033750.gif);
+}
+.dianzizhengwudongtai{
+background:url(/upload/070910/chinavvv_0709101753160000.gif);
+background-repeat: no-repeat;
+}
+.dianshizhengwumidd{
+
+background:url(/upload/070910/chinavvv_0709101750077180.gif);
+background-repeat: no-repeat;
+}
+.dianzhizhengwudiback{
+background:url(/upload/070905/chinavvv_0709051047152030.gif);
+
+}
+dianzhizhengwudi{
+background:url(/upload/070910/chinavvv_0709101752451560.gif);
+
+}
+/*重点项目*/
+.zhondianxiangmutop{
+background:url(/upload/070905/chinavvv_0709051132379060.gif);
+background-repeat: no-repeat;
+}
+.zhongdianxiangmuback{
+background:url(/upload/070905/chinavvv_0709051134439840.gif);
+}
+.zhongdianxinamu_ownback{
+background:url(/upload/070905/chinavvv_0709051140030460.gif);
+background-repeat: no-repeat;
+}
+.zhongdianxiangmudi{
+background:url(/upload/070905/chinavvv_0709051133186400.gif);
+background-repeat: no-repeat;
+
+}
+.zhengwugongkai_zhenfulingdao{
+background:url(/upload/070905/chinavvv_0709051133186400.gif);
+background-repeat: no-repeat;
+}
+.xinguifanwenjian{
+
+background:url(/upload/070907/chinavvv_0709071735153750.gif);
+
+}
+.zhengchejiedu{
+
+background:url(/upload/070907/chinavvv_0709071735153750.gif);
+
+}
+
+
+
+
+/*公众参与======================================================================*/
+/*市长信箱*/
+.bianmingrexian_right{
+background:url(/upload/070831/chinavvv_0708310929056250.gif);
+background-repeat: no-repeat;
+}*
+.xingfengrefeng{
+background:url(/upload/070909/chinavvv_0709090831452030.jpg);
+background-repeat: no-repeat;
+}
+.rexianidanhua{
+background:url(/upload/070909/chinavvv_0709090920315460.jpg);
+background-repeat: no-repeat;
+}
+.fangtanshilu{
+background:url(/upload/070908/chinavvv_0709082250367340.jpg);
+background-repeat: no-repeat;
+}
+
+
+.gongzongchanyudaohang_left{
+background:url(/upload/070907/chinavvv_0709070936070460.gif);
+background-repeat: no-repeat;
+}
+.gongzongchanyudoahang_back{
+background:url(/upload/070907/chinavvv_0709070903211560.gif);
+background-repeat: no-repeat;
+}
+.gognzongchanyudaohang_right{
+background:url(/upload/070907/chinavvv_0709070903348120.gif);
+background-repeat: no-repeat;
+}
+
+
+
+.shizhangxinxiang_top{
+background:url(/upload/070904/chinavvv_0709041514123120.gif);
+background-repeat: no-repeat;}
+.shizhangxinxiang_back{
+background:url(/upload/070831/chinavvv_0708310925102810.gif);
+}
+.shizhangxinxiang_di{
+background:url(/upload/070831/chinavvv_0708310926484530.gif);
+background-repeat: no-repeat;
+}
+/*部门信箱*/
+.benmenxiangxiang_top{
+background:url(/upload/070831/chinavvv_0708310927020150.gif);
+background-repeat: no-repeat;
+}
+.benmenxinxiang_di{
+background:url(/upload/070831/chinavvv_0708310926484530.gif);
+background-repeat: no-repeat;
+}
+.bumenxinxiang_back{
+
+background:url(/upload/070831/chinavvv_0708310925102810.gif);
+}
+/*市民论坛*/
+.shimingluntan_top{
+
+background:url(/upload/070905/chinavvv_0709050906354210.gif);
+background-repeat: no-repeat;
+}
+.shimingluntan_back{
+background:url(/upload/070831/chinavvv_0708310925102810.gif);}
+.shimingluntan_di{
+background:url(/upload/070831/chinavvv_0708310926484530.gif);
+background-repeat: no-repeat;
+}
+/*领导访谈*/
+.lengdaofangtan_top{
+background:url(/upload/070831/chinavvv_0708310929467960.gif);
+background-repeat: no-repeat;
+}
+.lengdaofangtan_back{
+background:url(/upload/070831/chinavvv_0708310931033900.gif);
+}
+.lengdaofangtan_middle{
+background:url(/upload/070909/chinavvv_0709090900305310.jpg);
+background-repeat: no-repeat;
+}
+/*行风热线*/
+.xingfenrexian{
+background:url(/upload/070909/chinavvv_0709090900419530.gif);
+background-repeat: no-repeat;
+}
+/*政策解读*/
+.zhengcejiedu{
+
+background:url(/upload/070910/chinavvv_0709100921030460.gif);
+background-repeat: no-repeat;
+}
+/*便民热线*/
+.bianmingrexian{
+.background:url(/upload/070831/chinavvv_0708310930313280.gif);
+background-repeat: no-repeat;
+}
+.bianmingrexian_left{
+background:url(/upload/070831/chinavvv_0708310928416710.gif);
+background-repeat: no-repeat;
+}
+.binaming_top{
+background:url(/upload/070831/chinavvv_0708310928259210.gif);
+background-repeat: no-repeat;
+}
+.binamingrexianback{
+background:url(/upload/070831/chinavvv_0708310928533430.gif);
+
+}
+
+
+
+
+
+
+/*政务服务==================================================================*/
+/*信息职询*/
+
+.zhengwufuwudaohang_left{
+background:url(/upload/070907/chinavvv_0709070931130000.gif);
+background-repeat: no-repeat;
+
+}
+.zhengwufuwudaohang_back{
+background:url(/upload/070907/chinavvv_0709070903211560.gif);
+background-repeat: no-repeat;
+}
+.zhengwufuwudaohang_right{
+background:url(/upload/070907/chinavvv_0709070903348120.gif);
+background-repeat: no-repeat;
+}
+
+.banlijigou_back{
+background:url(/upload/070907/chinavvv_0709071702206250.gif);
+background-repeat: no-repeat;
+}
+.banlijigou_bg{
+background-color:#f4f8fc;
+}
+
+.chengshishenghuo_back{
+background:url(/upload/070823/chinavvv_0708230900461710.jpg);
+}
+.gonggongxinxichaxun_back{
+background:url(/upload/070831/chinavvv_0708311110552650.gif);
+}
+.gonggongxi_back{
+background:url(/upload/070831/chinavvv_0708311135211400.gif);
+}
+.xingzheng_back{
+background:url(/upload/070831/chinavvv_0708311135211400.gif);
+}
+
+.xinxizhixun_top{
+background:url(/upload/070910/chinavvv_0709101958376090.gif);
+background-repeat: no-repeat;
+}
+.xinxizhixun_back{
+background:url(/upload/070831/chinavvv_0708311034000930.gif);
+
+}
+.xinxizhixun_di{
+background:url(/upload/070831/chinavvv_0708311033493590.gif);
+background-repeat: no-repeat;
+
+}
+/*办事大厅*/
+.fuwugongmin{
+background:url(/upload/070910/chinavvv_0709101942394680.jpg);
+background-repeat: no-repeat;
+}
+.fuwuqiye{
+background:url(/upload/070830/chinavvv_0708301151598590.gif);
+background-repeat: no-repeat;
+}
+.fuwutouzize{
+background:url(/upload/070830/chinavvv_0708301152112810.gif);
+background-repeat: no-repeat;
+
+}
+.fuwuluyouze{
+background:url(/upload/070830/chinavvv_0708301152223900.gif);
+background-repeat: no-repeat;
+
+}
+.banshidating{
+background:url(/upload/070831/chinavvv_0708311118159530.gif);
+background-repeat: no-repeat;
+}
+.banshidating_di{
+background:url(/upload/070831/chinavvv_0708311035115310.gif);
+background-repeat: no-repeat;
+
+}
+.gongwuyuantrue{
+background:url(/upload/070830/chinavvv_0708301152340460.gif);
+background-repeat: no-repeat;
+}
+.shewaibanshi{
+background:url(/upload/070830/chinavvv_0708301153055310.gif);
+background-repeat: no-repeat;
+
+}
+.banshidating_heng{
+background:url(/upload/070831/chinavvv_0708311044135150.gif);
+background-repeat: no-repeat;
+}
+.banshidating_top{
+background:url(/upload/070831/chinavvv_0708311034196710.gif);
+background-repeat: no-repeat;
+}
+.banshidating_back{
+
+background:url(/upload/070831/chinavvv_0708311042339370.gif);
+
+}
+/*公共信息查询*/
+.gonggongxinxichaxun_top{
+
+background:url(/upload/070830/chinavvv_0708301154460000.gif);
+background-repeat: no-repeat;
+}
+.gonggonxinxicha{
+background:url(/upload/070831/chinavvv_0708311118497180.gif);
+background-repeat: no-repeat;
+
+}
+.gonggong_di{
+background:url(/upload/070831/chinavvv_0708311119314370.gif);
+background-repeat: no-repeat;
+}
+/*页面右侧底部*/
+.changjingshi{
+background:url(/images/cj1_01.gif);
+background-repeat: no-repeat;
+
+
+}
+.fujidengji{
+background:url(/images/cj1_02.gif);
+background-repeat: no-repeat;
+
+}
+.fenyindengji{
+background:url(/images/cj1_03.gif);
+background-repeat: no-repeat;
+}
+.shouyangdengji{
+background:url(/images/cj1_04.gif);
+background-repeat: no-repeat;
+
+}
+.gongshangdengji{
+background:url(/images/cj1_05.gif);
+background-repeat: no-repeat;
+
+}
+.changkoubanshi{
+background:url(/images/cj1_06.gif);
+background-repeat: no-repeat;
+
+}
+.unknow{
+background:url(/images/cj1_07.gif);
+background-repeat: no-repeat;
+}
+/*页面右侧底部*/
+.fuwutongdao{
+background:url(/upload/070830/chinavvv_0708301153168280.gif);
+background-repeat: no-repeat;
+}
+.life_buttom{
+background:url(/upload/070823/chinavvv_0708230900581560.jpg);
+background-repeat: no-repeat;
+
+}
+.bianmingchaxun{
+
+background:url(/upload/070823/chinavvv_0708230900290620.jpg);
+background-repeat: no-repeat;
+}
+.life_middle{
+
+background:url(/upload/070823/chinavvv_0708230900162960.jpg);
+background-repeat: no-repeat;
+
+}
+.life_top{
+background:url(/upload/070823/chinavvv_0708230900030460.jpg);
+background-repeat: no-repeat;
+}
+/*行政审批*/
+.xinzhengshenpi_top{
+background:url(/upload/070907/chinavvv_0709070953070930.gif);
+background-repeat: no-repeat;
+}
+.xingzhengshenpi_buttom{
+background:url(/upload/070831/chinavvv_0708311119314370.gif);
+background-repeat: no-repeat;
+}
+.right_buttom{
+background:url(/upload/070831/chinavvv_0708311122535620.gif);
+background-repeat: no-repeat;
+
+}
+/*走进新乡======================================================================*/
+/*新乡概况*/
+
+.zoujinxinxiang_top{
+background:url(/upload/090514/chinavvv_0905141115182650.png);
+background-repeat: no-repeat;
+
+}
+.neirongjieshao{
+background:url(/upload/090512/chinavvv_0905121201178030.jpg);
+background-repeat: no-repeat;
+}
+.tupianxinxiang{
+background:url(/upload/070828/chinavvv_0708280848535420.gif);
+background-repeat: no-repeat;
+}
+.tupianxianxiang_back{
+background:url(/upload/070828/chinavvv_0708280842484640.gif);
+}
+.tupianxinxiang_right{
+background:url(/upload/070828/chinavvv_0708280847219330.gif);
+background-repeat: no-repeat;
+}
+
+
+
+
+.zoujinxinxiangdaohang_left{
+background:url(/upload/070907/chinavvv_0709070928585000.gif);
+background-repeat: no-repeat;
+}
+
+.zoujinxinxiangdaohang_back{
+background:url(/upload/070907/chinavvv_0709070903211560.gif);
+background-repeat: no-repeat;
+}
+.zoujinxinxingndaoshang_right{
+background:url(/upload/070907/chinavvv_0709070903348120.gif);
+background-repeat: no-repeat;
+
+}
+
+
+.xinxianggaikuang_top{
+
+background:url(/upload/070828/chinavvv_0708280816557770.gif);
+background-repeat: no-repeat;
+}
+.xinxiangzhongshu{
+
+background:url(/upload/070912/chinavvv_0709121523413900.jpg);
+background-repeat: no-repeat;
+}
+.xinxingaishu_buttom{
+background:url(/upload/070912/chinavvv_0709121523598120.jpg);
+background-repeat: no-repeat;
+}
+.xinxianggaishu_back{
+background:url(/upload/070912/chinavvv_0709121524166560.jpg);
+
+}
+.xinxiang_leftimg{
+background:url(/upload/070916/chinavvv_0709161358289830.jpg);
+background-repeat: no-repeat;
+}
+/*历史文化*/
+.lishiwenhua{
+background:url(/upload/070828/chinavvv_0708280826091830.gif);
+background-repeat: no-repeat;
+}
+.lishiwenhua_left{
+background:url(/upload/070828/chinavvv_0708280826249800.gif);
+background-repeat: no-repeat;
+
+}
+.lishiwenhua_leftback{
+background:url(/upload/070828/chinavvv_0708280826401830.gif);
+
+
+}
+.lishiwenhau_right{
+background:url(/upload/070828/chinavvv_0708280826529480.gif);
+background-repeat: no-repeat;
+}
+.lishiyange{
+background:url(/upload/070828/chinavvv_0708280827242610.gif);
+background-repeat: no-repeat;
+}
+.lishiyange_back{
+background:url(/upload/070828/chinavvv_0708280826401830.gif );
+}
+.lishiyange_right{
+background:url(/upload/070828/chinavvv_0708280826529480.gif);
+}
+.mingfengmingshu{
+background:url(/upload/070828/chinavvv_0708280827359800.gif);
+background-repeat: no-repeat;
+}
+.mingfengminshu_back{
+background:url(/upload/070828/chinavvv_0708280826401830.gif);
+}
+.mingshufenshu_rihgt{
+background:url(/upload/070828/chinavvv_0708280826529480.gif);
+}
+.jinjishili{
+background:url(/upload/070828/chinavvv_0708280835236200.gif);
+background-repeat: no-repeat;
+}
+.jinjingshili_back{
+background:url(/upload/070828/chinavvv_0708280836011670.gif);
+
+}
+.shefeishiye{
+background:url(/upload/070828/chinavvv_0708280835337610.gif);
+background-repeat: no-repeat;
+}
+.jinjitupianxinwen_left{
+background:url(/upload/070828/chinavvv_0708280854501670.gif);
+background-repeat: no-repeat;
+}
+.jinjishili_buttom{
+background:url(/upload/070828/chinavvv_0708280836146830.gif);
+background-repeat: no-repeat;
+}
+.shefeishiye_left{
+background:url(/upload/070828/chinavvv_0708280855063390.gif);
+background-repeat: no-repeat;
+}
+.shefeishiye_back{
+background:url(/upload/070828/chinavvv_0708280836263860.gif);
+}
+.shefeishiye_buttom{
+background:url(/upload/070828/chinavvv_0708280836381670.gif);
+background-repeat: no-repeat;
+}
+.tupianxinwen{
+
+background:url(/upload/070828/chinavvv_0708280848535420.gif);
+background-repeat: no-repeat;
+}
+.tupian_back{
+background:url(/upload/070828/chinavvv_0708280842484640.gif);
+}
+.tupian_right{
+background:url(/upload/070828/chinavvv_0708280847219330.gif);
+background-repeat:no-repeat;
+}
+.dizixinxiang{
+background:url(/upload/090512/chinavvv_0905121048258820.jpg);
+background-repeat: no-repeat;
+}
+.shipinxinxiang{
+background:url(/upload/070828/chinavvv_0708280828247770.gif);
+background-repeat: no-repeat;
+}
+.tongjishuoju{
+background:url(/upload/070828/chinavvv_0708280828093080.gif);
+background-repeat: no-repeat;
+}
+.zoujinxinxiang_rightback{
+background:url(/upload/070912/chinavvv_0709121536585150.gif);
+background-repeat: no-repeat;
+}
+
+/* 小页面的制作管理*/
+
+
+.cate_background{
+background:url(/image/img11/daohang.jpg);
+
+}
+.cate_top_background{
+background:url(/image/img11/tt2_02.jpg);
+}
+body{ margin:0px; padding:0px; list-style:none; border:0px;}
+a:link,a:visited{text-decoration:none; }
+a:hover{ text-decoration:none;}
+body,ul,li,img,a{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	border:0;
+	}
+	
+.tabberlive_01 .tabbertab_01 {overflow:visible; overflow:hidden;}
+.tabberlive_01 .tabbertabhide_01 { display:none;}
+
+/*头部*/
+.head{ width:auto; height:40px; margin:0px auto; background-color:#FFFFFF;}
+    .top{ width:1002px; height:40px; margin:0px auto; line-height:40px;}
+	    .topleft{ width:240px; height:16px; float:left; margin-top:10px;}
+		a.topright{ width:auto; height:px; float:right; margin-right:5px; margin-left:5px; font-size:12px; font-family:"宋体"; color:#000000; line-height:40px;}
+	/*头部图片*/
+	.toppic{ width:auto; height:205px; margin:0px auto; background:url(../image/img1/img_06.jpg) no-repeat #bc0c0e;}
+	    .toppiccon{ width:1002px; height:205px; margin:0px auto; }
+		
+		
+/*导航*/
+.nav{ width:1002px; height:72px; margin:0px auto;background: url(nav_bj_03.jpg) repeat-x;}
+.navcon{ width:1002px; height:72px; margin:0px auto;}
+.navconl{ width:580px; height:64px; margin-top:4px; float:left; padding-left:60px;background: url(icon_20.jpg) left center no-repeat;}
+.navconl a{ width:70px; height:32px; float:left; font-size:14px; font-weight:bold; color:#FFFFFF; font-family:"微软雅黑"; text-align:center; line-height:32px;}
+.navconr{ width:350px; height:72px; float:right;}
+.navconr a{ width:59px; height:21px; float:left; margin-top:25px; margin-left:10px; font-size:12px; color:#000000; line-height:21px; text-align:center;    background: url(img_ny_06.jpg) no-repeat;}
+
+/*当前位置*/
+.dqwz{ width:auto; height:33px; margin:0px auto; background:#FFFFFF; border-bottom:1px solid #e5e5e5;}
+.dqwzcon{ width:957px; height:33px; margin:0px auto;font-size:12px; color:#000000; line-height:33px; text-align:left; padding-left:15px;}
+.dqwzconl{ width:300px; height:33px; float:left; font-size:12px; color:#000000; line-height:33px; text-align:left;}
+
+
+/*日期*/
+.date{ width:270px; height:40px; float:right; font-size:12px; color:#000000; line-height:33px;}
+
+
+/*主内容*/
+.maincon{ width:1002px; min-height:400px; height:auto !important; margin:0px auto;}
+.clear{ clear:both; font-size:0px;}
+
+/*左边*/
+.left{ width:240px; height:auto; float:left;}
+
+
+/*政府信息公开*/
+.xxgk{ width:238px; height:340px; float:left; border:1px solid #e5e5e5; margin-top:10px;}
+a.xxgktit{ width:238px; height:35px; float:left;}
+.xxgkcont{ width:228px; height:250px; float:left; padding-left:10px; background:#FFFFFF;}
+.xxgkconb{ width:120px; height:55px; float:left; background:url(../image/img1/img_ny_46.jpg) left center no-repeat; margin-left:30px; font-size:16px; font-family:"微软雅黑"; line-height:25px; color:#bc080b; font-weight:bold; padding-left:60px;}
+
+/*使用手册*/
+a.sysc{ width:240px; height:37px; float:left; margin-top:10px;}
+
+/*社会评议*/
+a.shpy{ width:240px; height:66px; float:left; margin-top:10px;}
+
+/*分类信息*/
+	   .flxx{ width:238px; height:286px; float:left; margin-top:10px;  border:1px solid #e5e5e5; background:#FFFFFF;}
+	       a.flxxtit{ width:228px; height:35px; font-weight:bold; letter-spacing:2px; font-size:14px; line-height:35px; color:#bf0b0e; text-align:left; padding-left:10px;  float:left; margin:0px auto; background:url(../image/img1/fw_52.jpg) bottom no-repeat;}
+		   .flxxcon{ width:238px; height:253px; float:left; }
+
+/*政府文件*/
+.zfwj{ width:515px; height:270px; float:left; border:1px solid #e5e5e5; background:url(../image/img1/img_ny_17.jpg) repeat-x; margin-left:10px; margin-top:10px; }
+.zfwjon{ width:92px; height:32px; float:left; margin-top:5px; margin-left:10px; color:#FFFFFF; font-size:16px; font-family:"微软雅黑"; line-height:32px; text-align:center; font-weight:bold; background:url(../image/img1/img_ny_20.jpg) no-repeat; }
+.zfwjoff{ width:92px; height:32px; float:left; margin-top:5px; margin-left:10px; color:#666666; font-size:16px; font-family:"微软雅黑"; line-height:32px; text-align:center; font-weight:bold; }
+.zfwjcon{ width:515px; height:233px; float:left; background:#FFFFFF;}
+
+/*更多*/
+a.more{ width:60px; height:32px; font-family:"微软雅黑"; text-align:center; font-size:12px; line-height:32px; float:right; color:#a9a9a9; }
+.more1{ width:60px; height:32px; font-family:"微软雅黑"; text-align:center; font-size:12px; line-height:32px; float:right; color:#a9a9a9; }
+
+
+/*政府领导*/
+.gsgg{ width:222px; height:270px; float:left; border:1px solid #e5e5e5; margin-top:10px; margin-left:10px; background:url(../image/img1/img_ny_17.jpg) repeat-x;}
+    a.gsggtit{ width:100px; height:36px; float:left; margin-left:5px; color:#db8884; font-family:"微软雅黑"; line-height:36px; text-align:center; background:url(../image/img1/img_ny_23.jpg) left center no-repeat; padding-left:20px; font-size:16px; font-weight:bold;}
+	.gsggcon{ width:222px; height:234px; background:url(../image/img1/img_ny_30.jpg) no-repeat; float:left;}
+	
+/*标语*/
+.biaoyu{ width:751px; height:81px; float:left; margin-left:10px; margin-top:10px;}
+
+/*中间*/
+.center{ width:525px; height:auto; float:left;}
+
+/*政府文件*/
+.zfhy{ width:515px; height:210px; float:left; border:1px solid #e5e5e5; background:url(../image/img1/img_ny_17.jpg) repeat-x; margin-left:10px; margin-top:10px; }
+.zfhyon{ width:92px; height:32px; float:left; margin-top:5px; margin-left:10px; color:#FFFFFF; font-size:16px; font-family:"微软雅黑"; line-height:32px; text-align:center; font-weight:bold; background:url(../image/img1/img_ny_20.jpg) no-repeat; }
+.zfhyoff{ width:92px; height:32px; float:left; margin-top:5px; margin-left:10px; color:#666666; font-size:16px; font-family:"微软雅黑"; line-height:32px; text-align:center; font-weight:bold; }
+.zfhycon{ width:515px; height:173px; float:left; background:#FFFFFF;}
+
+
+/*主题分类查询*/
+		.flcx{ width:515px; height:165px; border:1px solid #e5e5e5;  margin-top:10px; margin-left:10px; float:left; background:url(../image/img1/img_90.jpg) repeat-x; }
+		    .flcxtiton{ width:142px; height:34px; font-size:14px; font-weight:bold; color:#ffffff; text-align:center; line-height:34px; background:url(../image/img1/img_85.jpg) no-repeat; float:left;}
+		   .flcxtitoff{ width:142px; height:34px; font-size:14px; font-weight:bold; color:#ffffff; text-align:center; line-height:34px; background:url(../image/img1/img_85.jpg) no-repeat; float:left;}
+		    .flcxon{ width:85px; height:34px; font-size:12px; letter-spacing:1px; color:#ff0000; text-align:center; line-height:34px; float:right;}
+		   .flcxoff{ width:85px; height:34px; font-size:12px; letter-spacing:1px; color:#686868; text-align:center; line-height:34px; float:right;}
+		   .flcxcon{ width:515px; height:131px; float:left; background:#FFFFFF; }
+		   .flcxcon a{ width:auto; height:27px; float:left; font-size:12px; line-height:27px; color:#000000; background:url(../image/img1/img_002.jpg) left center no-repeat; padding-left:10px; margin-left:6px; }
+		   
+/*站内检索*/
+.js{ width:222px; height:126px; float:right; border:1px solid #e5e5e5; margin-top:10px; margin-left:10px; background:url(../image/img1/img_113.jpg) repeat-x;}
+   .json{ width:104px; height:36px; font-family:"微软雅黑"; font-size:18px; margin-top:4px; color:#bd0a0d; background:url(../image/img1/img_116.jpg) no-repeat;  font-weight:bold;  text-align:center; line-height:36px; float:left; margin-left:5px;}
+   .jscon{ width:222px; height:86px; background:#FFFFFF; float:left;}
+   
+   .sousuo{ width:200px; height:70px; float:left; margin-top:10px; margin-left:10px;} 
+	 .sousuo .searIco{float:left;}
+	 .sousuo .searText{ float:left; padding:0px 5px 0px 5px; border:0px; width:190px;  border:1px solid #e5e5e5; height:35px; background:url(../image/img1/img_ny_61.jpg) right center no-repeat;  line-height:35px; color:#CCCCCC;}
+	.sousuo .searBtn{ width:65px; height:26px; background:url(../image/img1/img_ny_66.jpg) no-repeat; font-size:13px; letter-spacing:3px; line-height:26px; text-align:center; margin-top:5px; margin-left:70px; display:block; float:left;}
+	
+	
+	/*规划计划*/
+	a.ghjh{ width:225px; height:55px; float:left; margin-top:10px; margin-left:10px;}
+
+
+
+/*链接导航*/
+.ljdh{ width:1000px; height:auto; float:left; margin-top:10px; border:1px solid #e5e5e5; background:url(../image/img1/img_113.jpg) repeat-x; margin-bottom:10px;}
+.ljdhtit{ width:151px; height:37px; float:left; font-size:18px; color:#ffffff; margin-top:1px; font-weight:bold; background:url(../image/img1/img_111.jpg) no-repeat; text-align:center; line-height:37px; font-family:"微软雅黑";}
+   .ljdhon{ width:155px; height:36px; font-family:"微软雅黑"; font-size:16px; margin-top:4px; color:#000000; background:url(../image/img1/index_ny_98.jpg) no-repeat;  font-weight:bold;  text-align:center; line-height:36px; float:left; margin-left:15px;}
+   .ljdhoff{  width:155px; height:36px; font-family:"微软雅黑"; font-size:16px; margin-top:4px; color:#000000; font-weight:bold; text-align:center; line-height:36px; float:left; margin-left:15px;}
+   .ljdhcon{ width:1000px; height:auto; background:#FFFFFF; float:left;}
+
+
+
+/*尾部*/
+.foot{ width:auto; height:170px; margin:0px auto; background:url(../image/img1/img_122.jpg) repeat-x;}
+    .footnav{ width:450px; height:39px; margin:0px auto; }
+       a.footnavcon{ width:68px; height:39px; float:left; font-size:12px; color:#ffffff; text-align:center; line-height:39px;}
+	   
+	.footcon{ width:1002px; height:131px; margin:0px auto;}
+	   .beian{ width:35px; height:54px; float:left; margin-top:20px; margin-left:100px;}
+	   .footcont{ width:650px; height:110px; float:left; margin-top:10px; margin-left:40px; text-align:center; line-height:30px; font-size:12px;}
+	   .jh{ width:90px; height:92px; float:left; margin-top:20px; margin-left:20px;}
+

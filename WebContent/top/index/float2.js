@@ -1,5 +1,4 @@
-﻿<!--
-function addEvent(obj,evtType,func,cap){
+﻿function addEvent(obj,evtType,func,cap){
     cap=cap||false;
 if(obj.addEventListener){
      obj.addEventListener(evtType,func,cap);
