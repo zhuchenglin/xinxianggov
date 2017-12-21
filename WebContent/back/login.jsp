@@ -69,26 +69,27 @@
                 <!-- END Login Title -->
 
                 <!-- Login Form -->
-                <form id="form-login" action="index.html" method="post" class="form-horizontal">
+                <form id="form-login" action="${pageContext.request.contextPath }/LoginServlet" method="post" class="form-horizontal">
                     <div class="form-group">
                         <label for="login-email" class="col-xs-12">Email Or Phone Or UserName</label>
                         <div class="col-xs-12">
-                            <input type="text" id="login-email" name="login-email" class="form-control" placeholder="Your email or phone or username ..">
+                            <input type="text" id="login-email" name="account" class="form-control" placeholder="Your email or phone or username ..">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="login-password" class="col-xs-12">Password</label>
                         <div class="col-xs-12">
-                            <input type="password" id="login-password" name="login-password" class="form-control" placeholder="Your password..">
+                            <input type="password" id="login-password" name="password" class="form-control" placeholder="Your password..">
                         </div>
                     </div>
                     <div class="form-group form-actions">
-                      <!--   <div class="col-xs-8">
-                            <label class="csscheckbox csscheckbox-primary">
-                                <input type="checkbox" id="login-remember-me" name="login-remember-me"><span></span> Remember Me?
+                         <div class="col-xs-8">
+                            <label class="csscheckbox csscheckbox-primary" style="color:red;">
+                               <!--   <input type="checkbox" id="login-remember-me" name="login-remember-me"><span></span> Remember Me?-->
+                               	${msg }
                             </label>
-                        </div> -->
-                        <div class="col-xs-10 text-right">
+                        </div> 
+                        <div class="col-xs-4 text-right">
                             <button type="submit" class="btn btn-effect-ripple btn-sm btn-success">Log In</button>
                         </div>
                     </div>
