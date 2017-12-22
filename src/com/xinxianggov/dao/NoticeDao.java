@@ -46,7 +46,7 @@ public class NoticeDao {
 	
 	public int new_notice(Notice notice) throws SQLException{
 		QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
-		String sql = "insert into notice ('title','content','created_at','updated_at','click_num','status','manage_id') values(?,?,?,?,?,?,?)";
+		String sql = "insert into notice (title,content,created_at,updated_at,click_num,status,manage_id) values (?,?,?,?,?,?,?) ";
 		Object[] params = {notice.getTitle(),notice.getContent(),notice.getCrated_at(),notice.getUpdated_at(),notice.getClick_num(),notice.getStatus(),notice.getManage_id()};
 		int result = queryRunner.update(sql,params);
 		return result;
