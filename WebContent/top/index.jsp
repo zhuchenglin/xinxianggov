@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
@@ -19,6 +21,7 @@ base.href=basehref.substring(0,fix)+base.href;
 <link id="indexcss" href="./index/03.css" rel="stylesheet" type="text/css">
 <link href="./index/tabber.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="./index/pagination.css">
+<link rel="stylesheet" href="./css/index/mdsSlide.css">
 <script language="JavaScript" type="text/javascript" src="./index/jquery.js"></script>
 <script language="JavaScript" type="text/javascript" src="./index/jquery.cookie.js"></script> 
 <script language="JavaScript" type="text/javascript" src="./index/normalprotal.js"></script>
@@ -27,6 +30,7 @@ base.href=basehref.substring(0,fix)+base.href;
 <script language="JavaScript" type="text/javascript" src="./index/Maple_Couplet.js"></script>
 <script language="JavaScript" type="text/javascript" src="./index/float.js"></script>
 <script language="JavaScript" type="text/javascript" src="./index/float2.js"></script>
+<script src="./js/index/getData.js" type="text/javascript"></script>
 </head><body><div id="wcagnav" style="top: 0px;text-align:center; display: none;"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="cwbtd" title="纯文本通道" value="纯文本通道" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="页面放大" id="ymfd" value="页面放大" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="页面缩小" id="ymsx" value="页面缩小" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="文字放大" id="wzfd" value="文字放大" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="文字缩小" id="wzsx" value="文字缩小" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzacolor" title="高对比度" value="高对比度" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzaline" title="开启辅助线" value="开启辅助线" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzareset" title="重置" value="重置" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzakg" title="关闭" value="关闭" type="button"></div>
 <table cellspacing="0" cellpadding="0" width="1002" align="center" border="0"> 
 <tbody> 
@@ -49,7 +53,7 @@ base.href=basehref.substring(0,fix)+base.href;
 <div onclick="window.open(&#39;viewCmsCac.do?cacId=4028815814acaf060114acb334e0000c&#39;,&#39;_blank&#39;);" tabindex="6" class="navoff" activeclass="navon" unactiveclass="navoff">走进新乡</div></ul></div></div>
 <div class="date">
 </div><a class="date123" href="http://218.28.71.220:9875/"><img alt="空气质量" src="./index/ico_05.png"></a> <!--<A class=date123 href="http://211.142.122.60/">--><a href="http://tianqi.2345.com/xinxiang/53986.htm" target="_blank"><img alt="天气预报" src="./index/ico_03.png"></a> </div>
-<div onmouseout="yin()" class="ifra" style="height: 200px; width: 1002px; position: absolute; left: 0px; display: none; top: 34px; background-color: rgb(204, 204, 204);"><iframe height="200" src="./index/zwfw.html" width="1002" scrolling="no"></iframe></div></div></td></tr></tbody></table> 
+<div onmouseout="yin()" class="ifra" style="height: 200px; width: 1002px; position: absolute; left: 0px; display: none; top: 34px; background-color: rgb(204, 204, 204);z-index: 9999;"><iframe height="200" src="./index/zwfw.html" width="1002" scrolling="no"></iframe></div></div></td></tr></tbody></table> 
 <style type="text/css"> 
 .flcxcon a{ padding-left:20px; margin-left:15px;} 
 /*.flcxoff{ float:left;} 
@@ -78,20 +82,20 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 <div style="WIDTH: 1002px; MARGIN: 0px auto"><a href="http://www.henan.gov.cn/zt/2017zt/shijiuda/index.shtml" target="_blank"><img style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" src="./index/1510627656433.jpg"></a> </div>
 <div class="maincon"><!--图片新闻-->
 <div class="picnew"><!--左侧-->
-<div class="picnewl"><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-  <tbody><tr>
-    <td align="center" valign="middle">
+<div class="picnewl">
+    <div class="wrap">
+        <div id="slideee">
+            <ul class="list">
+                <li><a href="javascript:;"><img src="./imgs/index/1.png" alt=""></a><p style="text-align: center;">标题1</p></li>
+                <li><a href="javascript:;"><img src="./imgs/index/2.png" alt=""></a><p style="text-align: center;">标题2</p></li>
+                <li><a href="javascript:;"><img src="./imgs/index/3.png" alt=""></a><p style="text-align: center;">标题3</p></li>
+                <li><a href="javascript:;"><img src="./imgs/index/4.png" alt=""></a><p style="text-align: center;">标题4</p></li>
+                <li><a href="javascript:;"><img src="./imgs/index/5.png" alt=""></a><p style="text-align: center;">标题5</p></li>
+            </ul>
+        </div>
+    </div> 
 
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="334" height="270">
-<param name="allowScriptAccess" value="sameDomain">
-<param name="quality" value="high">
-<param name="bgcolor" value="#fffff">
-<param name="menu" value="false">
-<param name="wmode" value="transparent">
-<param name="FlashVars" value="pics=/upload/1513752510679.jpg?|/upload/1512631859254.jpg?|/upload/1512456167457.jpg?|/upload/1512009702597.jpg?|/upload/1511920563771.jpg?&amp;links=sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220144159170.html|sitegroup/root/html/4028815814acaf060114acb4d476001e/20171207143445336.html|sitegroup/root/html/4028815814acaf060114acb4d476001e/20171205110749317.html|sitegroup/root/html/4028815814acaf060114acb4d476001e/20171130103791708.html|sitegroup/root/html/4028815814acaf060114acb4d476001e/20171128105962267.html|&amp;texts=张国伟在全市创建全国文明城市总结表彰暨百...|张国伟在市委理论学习中心组集中学习（扩大...|张国伟在全市学习贯彻党的十九大精神专题研...|省委第六巡视组向新乡市反馈巡视情况|我市召开郑新融合工作座谈会|&amp;borderwidth=334&amp;borderheight=245&amp;textheight=25">
-    </td>
-  </tr>
-</tbody></table></div><!--右侧-->
+</div><!--右侧-->
 <div class="picnewr">
 <div class="tabberlive_01">
 <ul style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
@@ -6334,4 +6338,11 @@ a{text-decoration: none}
 <tr>
 <td colspan="2">
 <div align="center">建议使用：1024*768分辨率&nbsp;&nbsp;16位以上颜色&nbsp; 技术支持：山谷网络.&nbsp; </div>
-<div align="center"><a style="LINE-HEIGHT: 20px; DISPLAY: inline-block; HEIGHT: 25px; TEXT-DECORATION: none" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41070202000236" target="_blank"><img border="0" src="./index/20160608093422309.jpg">&nbsp;&nbsp; 豫公网安备 41070202000236号</a></div></td></tr></tbody></table></td></tr></tbody></table></body></html>
+<div align="center"><a style="LINE-HEIGHT: 20px; DISPLAY: inline-block; HEIGHT: 25px; TEXT-DECORATION: none" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41070202000236" target="_blank"><img border="0" src="./index/20160608093422309.jpg">&nbsp;&nbsp; 豫公网安备 41070202000236号</a></div></td></tr></tbody></table></td></tr></tbody></table>
+<script src="./js/index/Mds.onePic.1.0.js" type="text/javascript"></script>
+<script>
+    $('#slideee').MdsSlideFade({
+        pageNum: true,time: '3000'
+    });
+</script>
+</body></html>
