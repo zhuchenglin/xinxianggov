@@ -73,9 +73,7 @@
 	<tmpl:overwrite name="script_div">
 		<script>
 			function edit_notice(id){
-				$.post("",{},function(data){
-					
-				});
+				location.href="${pageContext.request.contextPath }/ReadyEditNewServlet?type=0&id="+id;
 			}
 			function delete_notice(id){
 				let url = "${pageContext.request.contextPath }/DeleteNoticeServlet";

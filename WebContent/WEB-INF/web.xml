@@ -88,4 +88,24 @@
     <servlet-name>DeleteNoticeServlet</servlet-name>
     <url-pattern>/DeleteNoticeServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReadyEditNewServlet</display-name>
+    <servlet-name>ReadyEditNewServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.ReadyEditNewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadyEditNewServlet</servlet-name>
+    <url-pattern>/ReadyEditNewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditNewServlet</display-name>
+    <servlet-name>EditNewServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.EditNewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditNewServlet</servlet-name>
+    <url-pattern>/EditNewServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
