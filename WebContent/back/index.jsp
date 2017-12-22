@@ -40,14 +40,8 @@
 										type="checkbox"><span
 										style="background-color: rgb(246, 244, 236);"></span></label></td> -->
 								<td><strong>${item.title }</strong></td>
-								<%--<td>
-								 <jsp:useBean id="datevalue" class=java.util.Date/>
-									<jsp:setProperty name="datevalue1" property="time" value="${item.created_at }"/>
-								<fmt:formatDate value="${datevalue1 }" pattern="yyyy-MM-dd HH:mm"/></td>
-									<jsp:setProperty name="datevalue2" property="time" value="${item.updated_at }"/>
-								<fmt:formatDate value="${datevalue2 }" pattern="yyyy-MM-dd HH:mm"/></td> --%>
-								<td></td>
-								<td></td>
+								<td><tmpl:date value="${item.created_at }"></tmpl:date>  </td>
+								<td><tmpl:date value="${item.updated_at }"></tmpl:date>  </td>
 								<td>${item.click_num }</td>
 								<td>${item.manage_username }</td>
 								<td class="text-center"><a href="javascript:void(0)"
@@ -92,6 +86,34 @@
 					} */
 				});
 			}
+		 function date(date, pattern) {
+			        if (date == undefined) {
+			            date = new Date();
+			        } else {
+			            date = new Date(date*1000)
+			        }
+			        if (pattern == undefined) {
+			            pattern = "yyyy-MM-dd hh:mm:ss";
+			        }
+			        var o = {
+			            "M+": date.getMonth() + 1,
+			            "d+": date.getDate(),
+			            "h+": date.getHours(),
+			            "m+": date.getMinutes(),
+			            "s+": date.getSeconds(),
+			            "q+": Math.floor((date.getMonth() + 3) / 3),
+			            "S": date.getMilliseconds()
+			        }
+			        if (/(y+)/.test(pattern)) {
+			            pattern = pattern.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+			        }
+			        for (var k in o) {
+			            if (new RegExp("(" + k + ")").test(pattern)) {
+			                pattern = pattern.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+			            }
+			        }
+			        return pattern;
+			    };
 		
 		</script>	
 	

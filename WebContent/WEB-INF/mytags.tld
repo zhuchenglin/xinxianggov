@@ -28,4 +28,14 @@
 		</attribute>
       <!--<body-content>JSP</body-content> --><!-- 标签体内容的格式 -->
   </tag>
+  <tag>
+      <name>date</name><!-- 你定义的标签的名称 -->
+       <tag-class>com.xinxianggov.tags.DateTag</tag-class><!-- 对应的标签处理程序：包名+类名 -->
+      <attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+      <!--<body-content>JSP</body-content> --><!-- 标签体内容的格式 -->
+  </tag>
  </taglib>

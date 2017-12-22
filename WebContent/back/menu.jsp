@@ -431,7 +431,14 @@
                             <!-- User Dropdown -->
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="${pageContext.request.contextPath }/back/static/AppUI/img/placeholders/avatars/avatar9.jpg" alt="avatar">
+                                	 <c:choose>
+                                	 		<c:when test="${not empty manage.imgurl and manage.imgurl != ''}">
+                                	 			<img src="${pageContext.request.contextPath }/${manage.imgurl }" alt="avatar">
+                                	 		</c:when>
+                                	 		<c:otherwise>
+                                	 			<img src="${pageContext.request.contextPath }/back/static/AppUI/img/placeholders/avatars/avatar9.jpg" alt="avatar">
+                                	 		</c:otherwise>
+                                	 </c:choose>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                    

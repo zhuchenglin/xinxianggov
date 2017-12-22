@@ -38,7 +38,10 @@ public class EditNewServlet extends HttpServlet {
 		String content = request.getParameter("content");
 		
 		Manage manage = (Manage) request.getSession().getAttribute("manage");
-		System.out.println(manage);
+		if(manage==null){
+			request.setAttribute("msg", "请登录后再进行操作");
+			request.getRequestDispatcher("/back/login.jsp").forward(request, response);
+		}
 		try {
 			/**
 			 * 公告
@@ -51,7 +54,7 @@ public class EditNewServlet extends HttpServlet {
 					notice.setTitle(title);
 					notice.setContent(content);
 					notice.setClick_num(0);
-					notice.setCrated_at(getSecondTimestampTwo(new Date()));
+					notice.setCreated_at(getSecondTimestampTwo(new Date()));
 					notice.setUpdated_at(getSecondTimestampTwo(new Date()));
 					notice.setManage_id(manage.getId());
 					notice.setStatus(1);
@@ -102,11 +105,9 @@ public class EditNewServlet extends HttpServlet {
 	}
 	
 	public static int getSecondTimestampTwo(Date date){  
-	    if (null == date) {  
-	        return 0;  
-	    }  
-	    String timestamp = String.valueOf(date.getTime()/1000);  
-	    return Integer.valueOf(timestamp);  
+		long time = System.currentTimeMillis();
+	    String t = String.valueOf(time/1000);  
+        return Integer.parseInt(t); 
 	} 
 	
 }

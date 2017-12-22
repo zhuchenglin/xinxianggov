@@ -4,7 +4,7 @@ public class Notice {
 	private int id;
 	private String title;
 	private String content;
-	private int crated_at;
+	private int created_at;
 	private int updated_at;
 	private int click_num;
 	private int status;
@@ -29,11 +29,11 @@ public class Notice {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public int getCrated_at() {
-		return crated_at;
+	public int getCreated_at() {
+		return created_at;
 	}
-	public void setCrated_at(int crated_at) {
-		this.crated_at = crated_at;
+	public void setCreated_at(int crated_at) {
+		this.created_at = crated_at;
 	}
 	public int getUpdated_at() {
 		return updated_at;
@@ -69,7 +69,7 @@ public class Notice {
 	}
 	public String toString() {
 		return "Dynamic [title=" + title + ", content=" + content
-				+ ", crated_at=" + crated_at + ", updated_at=" + updated_at
+				+ ", crated_at=" + created_at + ", updated_at=" + updated_at
 				+ ", click_num=" + click_num + ", status=" + status
 				+ ", manage_id=" + manage_id +  "]";
 	}
