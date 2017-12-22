@@ -58,4 +58,34 @@
     <servlet-name>ChangeProfileServlet</servlet-name>
     <url-pattern>/ChangeProfileServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NoticeListServlet</display-name>
+    <servlet-name>NoticeListServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.NoticeListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeListServlet</servlet-name>
+    <url-pattern>/NoticeListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditNoticeServlet</display-name>
+    <servlet-name>EditNoticeServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.EditNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditNoticeServlet</servlet-name>
+    <url-pattern>/EditNoticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteNoticeServlet</display-name>
+    <servlet-name>DeleteNoticeServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.DeleteNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteNoticeServlet</servlet-name>
+    <url-pattern>/DeleteNoticeServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -2,6 +2,7 @@ package com.xinxianggov.servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sun.org.apache.xalan.internal.xsltc.runtime.ErrorMessages;
 import com.xinxianggov.domain.Manage;
+import com.xinxianggov.domain.Notice;
 import com.xinxianggov.service.ManageService;
+import com.xinxianggov.service.NoticeService;
 
 /**
  *登陆servlet
@@ -50,7 +53,7 @@ public class LoginServlet extends HttpServlet {
 			if(manage2!=null){
 				//登陆成功，跳转到首页
 				request.getSession().setAttribute("manage", manage2);
-				request.getRequestDispatcher("/back/index.jsp").forward(request, response);
+				request.getRequestDispatcher("NoticeListServlet").forward(request, response);
 			}else{
 				request.setAttribute("msg", "账号或密码错误！请重新登录！");
 				request.getRequestDispatcher("/back/login.jsp").forward(request, response);

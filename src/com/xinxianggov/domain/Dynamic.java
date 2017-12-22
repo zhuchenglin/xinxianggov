@@ -8,6 +8,7 @@ public class Dynamic {
 	private int click_num;
 	private int status;
 	private int manage_id;
+	private String manage_username;
 	private String img_url;
 	public String getTitle() {
 		return title;
@@ -58,6 +59,12 @@ public class Dynamic {
 		this.img_url = img_url;
 	}
 	
+	public String getManage_username() {
+		return manage_username;
+	}
+	public void setManage_username(String manage_username) {
+		this.manage_username = manage_username;
+	}
 	public String toString() {
 		return "Dynamic [title=" + title + ", content=" + content
 				+ ", crated_at=" + crated_at + ", updated_at=" + updated_at
