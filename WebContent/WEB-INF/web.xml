@@ -31,12 +31,61 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>NoticeServlet</display-name>
-    <servlet-name>NoticeServlet</servlet-name>
-    <servlet-class>com.xinxianggov.servlet.NoticeServlet</servlet-class>
+    <display-name>LoginoutServlet</display-name>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.LoginoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>NoticeServlet</servlet-name>
-    <url-pattern>/NoticeServlet</url-pattern>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <url-pattern>/LoginoutServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>CheckLoginFilter</display-name>
+    <filter-name>CheckLoginFilter</filter-name>
+    <filter-class>com.xinxianggov.filter.CheckLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CheckLoginFilter</filter-name>
+    <url-pattern>/CheckLoginFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChangeProfileServlet</display-name>
+    <servlet-name>ChangeProfileServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.ChangeProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeProfileServlet</servlet-name>
+    <url-pattern>/ChangeProfileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NoticeListServlet</display-name>
+    <servlet-name>NoticeListServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.NoticeListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeListServlet</servlet-name>
+    <url-pattern>/NoticeListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditNoticeServlet</display-name>
+    <servlet-name>EditNoticeServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.EditNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditNoticeServlet</servlet-name>
+    <url-pattern>/EditNoticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteNoticeServlet</display-name>
+    <servlet-name>DeleteNoticeServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.DeleteNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteNoticeServlet</servlet-name>
+    <url-pattern>/DeleteNoticeServlet</url-pattern>
   </servlet-mapping>
 </web-app>

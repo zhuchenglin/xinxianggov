@@ -1,6 +1,7 @@
 package com.xinxianggov.domain;
 
 public class Notice {
+	private int id;
 	private String title;
 	private String content;
 	private int crated_at;
@@ -8,6 +9,14 @@ public class Notice {
 	private int click_num;
 	private int status;
 	private int manage_id;
+	private String manage_username;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -52,6 +61,12 @@ public class Notice {
 	}
 
 	
+	public String getManage_username() {
+		return manage_username;
+	}
+	public void setManage_username(String manage_username) {
+		this.manage_username = manage_username;
+	}
 	public String toString() {
 		return "Dynamic [title=" + title + ", content=" + content
 				+ ", crated_at=" + crated_at + ", updated_at=" + updated_at
