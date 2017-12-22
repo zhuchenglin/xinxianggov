@@ -201,10 +201,10 @@
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Notice</span></a>
                                     <ul>
                                         <li>
-                                            <a href="#">Notice List</a>
+                                            <a href="${pageContext.request.contextPath }/NoticeListServlet">Notice List</a>
                                         </li>
                                         <li>
-                                            <a href="${pageContext.request.contextPath }/ReadyEditNewServlet?type=0&id=0" class="sidebar-nav-submenu">Publish Notice</a>
+                                            <a href="javascript:void(0);" onclick="herf_load()" class="sidebar-nav-submenu">Publish Notice</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -431,7 +431,14 @@
                             <!-- User Dropdown -->
                             <li class="dropdown">
                                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="${pageContext.request.contextPath }/back/static/AppUI/img/placeholders/avatars/avatar9.jpg" alt="avatar">
+                                	 <c:choose>
+                                	 		<c:when test="${not empty manage.imgurl and manage.imgurl != ''}">
+                                	 			<img src="${pageContext.request.contextPath }/${manage.imgurl }" alt="avatar">
+                                	 		</c:when>
+                                	 		<c:otherwise>
+                                	 			<img src="${pageContext.request.contextPath }/back/static/AppUI/img/placeholders/avatars/avatar9.jpg" alt="avatar">
+                                	 		</c:otherwise>
+                                	 </c:choose>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                    
@@ -475,7 +482,12 @@
 
         <!-- Load and execute javascript code used only in this page -->
         <script src="${pageContext.request.contextPath }/back/static/AppUI/js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init()});</script>
+        <script>
+        $(function(){ ReadyDashboard.init()});
+        function herf_load(){
+        	location.href="${ pageContext.request.contextPath}/ReadyEditNewServlet?type=0&id=0";
+        }
+        </script>
         <tmpl:block name="script_div"></tmpl:block>
     </body>
 </html>
