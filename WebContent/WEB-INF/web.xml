@@ -106,7 +106,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>AllServlet</servlet-name>
-    <url-pattern>/AllServlet</url-pattern>
+    <url-pattern>/govIndex</url-pattern>
   </servlet-mapping>
     <servlet>
     <display-name>ReadyEditNewServlet</display-name>
@@ -126,5 +126,15 @@
   <servlet-mapping>
     <servlet-name>EditNewServlet</servlet-name>
     <url-pattern>/EditNewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NoticeDetailServlet</display-name>
+    <servlet-name>NoticeDetailServlet</servlet-name>
+    <servlet-class>com.xinxianggov.servlet.NoticeDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeDetailServlet</servlet-name>
+    <url-pattern>/notice_detail</url-pattern>
   </servlet-mapping>
 </web-app>

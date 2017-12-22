@@ -517,7 +517,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
             <tr height="20">
                 <td width="10">&nbsp;·</td>
                 <td align="left">
-        		<a style=" font-size:13px; line-height:23px; color:#000000;" href="javascript:;" target="_blank">
+        		<a style=" font-size:13px; line-height:23px; color:#000000;" href="${pageContext.request.contextPath}/notice_detail?notice_id=${varName.id}" target="_blank">
                 ${varName.title}
         		</a>
         		</td>
@@ -3845,7 +3845,7 @@ a{text-decoration: none}
 <tbody>
 <tr></tr></tbody></table></div>
 <div class="tabbertab_01 tabbertabhide_01 jscon" tabindex_01="2">
-<h3><a href="../back/login.jsp" style="font-size: 18px;color: #bd0a0d;" target="_blank">前往</a>后台登录</h3>
+<h3><a href="${pageContext.request.contextPath }/back/login.jsp" style="font-size: 18px;color: #bd0a0d;" target="_blank">前往</a>后台登录</h3>
 </div></div></div>
 <!--专题专栏-->
 <div class="ztzl"><a class="ztzltit">专题专栏</a><a class="more" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814b4d01d0114b5567f73001b" target="_blank">更多&gt;</a> 
