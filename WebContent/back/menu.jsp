@@ -179,7 +179,7 @@
                 <div id="sidebar">
                     <!-- Sidebar Brand -->
                     <div id="sidebar-brand" class="themed-background">
-                        <a href="${pageContext.request.contextPath }/back/index.jsp" class="sidebar-title">
+                        <a href="#" class="sidebar-title">
                             <i class="fa fa-cube"></i> <span class="sidebar-nav-mini-hide">XinxiangGov<strong>Manage</strong></span>
                         </a>
                     </div>
@@ -204,7 +204,7 @@
                                             <a href="#">Notice List</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="sidebar-nav-submenu">Publish Notice</a>
+                                            <a href="${pageContext.request.contextPath }/ReadyEditNewServlet?type=0&id=0" class="sidebar-nav-submenu">Publish Notice</a>
                                         </li>
                                     </ul>
                                 </li>
