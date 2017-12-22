@@ -3,7 +3,6 @@ package com.xinxianggov.service;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.sun.org.apache.xml.internal.resolver.helpers.PublicId;
 import com.xinxianggov.dao.NoticeDao;
 import com.xinxianggov.domain.Notice;
 

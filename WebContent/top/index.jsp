@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
@@ -18,24 +19,23 @@ base.href=basehref.substring(0,fix)+base.href;
 <meta name="location" content="">
 <meta name="channel" content="首页">
 <title>新乡市人民政府</title>
-<link id="indexcss" href="./index/03.css" rel="stylesheet" type="text/css">
-<link href="./index/tabber.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="./index/pagination.css">
-<link rel="stylesheet" href="./css/index/mdsSlide.css">
-<script language="JavaScript" type="text/javascript" src="./index/jquery.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/jquery.cookie.js"></script> 
-<script language="JavaScript" type="text/javascript" src="./index/normalprotal.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/tabber.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/dudu.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/Maple_Couplet.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/float.js"></script>
-<script language="JavaScript" type="text/javascript" src="./index/float2.js"></script>
-<script src="./js/index/getData.js" type="text/javascript"></script>
+<link id="indexcss" href="${pageContext.request.contextPath }/top/index/03.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/top/index/tabber.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/top/index/pagination.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/top/css/index/mdsSlide.css">
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/jquery.cookie.js"></script> 
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/normalprotal.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/tabber.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/dudu.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/Maple_Couplet.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/float.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath }/top/index/float2.js"></script>
 </head><body><div id="wcagnav" style="top: 0px;text-align:center; display: none;"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="cwbtd" title="纯文本通道" value="纯文本通道" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="页面放大" id="ymfd" value="页面放大" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="页面缩小" id="ymsx" value="页面缩小" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="文字放大" id="wzfd" value="文字放大" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" title="文字缩小" id="wzsx" value="文字缩小" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzacolor" title="高对比度" value="高对比度" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzaline" title="开启辅助线" value="开启辅助线" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzareset" title="重置" value="重置" type="button"><input style="BORDER-BOTTOM: #c80000 1px solid; BORDER-LEFT: #c80000 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #c80000; FONT-SIZE: 14px; BORDER-TOP: #c80000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c80000 1px solid; PADDING-TOP: 3px" id="wzakg" title="关闭" value="关闭" type="button"></div>
 <table cellspacing="0" cellpadding="0" width="1002" align="center" border="0"> 
 <tbody> 
 <tr> 
-<td><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" height="133" width="1002" src="index/20160309121011475.swf" wmode="opaque" quality="high" play="true" loop="true"></td></tr></tbody></table><!--导航-->
+<td><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" height="133" width="1002" src="${pageContext.request.contextPath }/top/index/20160309121011475.swf" wmode="opaque" quality="high" play="true" loop="true"></td></tr></tbody></table><!--导航-->
 <table align="center">
 <tbody>
 <tr>
@@ -52,8 +52,8 @@ base.href=basehref.substring(0,fix)+base.href;
 <div onclick="window.open(&#39;viewCmsCac.do?cacId=4028815814acaf060114acb49f7c001c&#39;,&#39;_blank&#39;);" tabindex="5" class="navoff" activeclass="navon" unactiveclass="navoff">公众参与</div>
 <div onclick="window.open(&#39;viewCmsCac.do?cacId=4028815814acaf060114acb334e0000c&#39;,&#39;_blank&#39;);" tabindex="6" class="navoff" activeclass="navon" unactiveclass="navoff">走进新乡</div></ul></div></div>
 <div class="date">
-</div><a class="date123" href="http://218.28.71.220:9875/"><img alt="空气质量" src="./index/ico_05.png"></a> <!--<A class=date123 href="http://211.142.122.60/">--><a href="http://tianqi.2345.com/xinxiang/53986.htm" target="_blank"><img alt="天气预报" src="./index/ico_03.png"></a> </div>
-<div onmouseout="yin()" class="ifra" style="height: 200px; width: 1002px; position: absolute; left: 0px; display: none; top: 34px; background-color: rgb(204, 204, 204);z-index: 9999;"><iframe height="200" src="./index/zwfw.html" width="1002" scrolling="no"></iframe></div></div></td></tr></tbody></table> 
+</div><a class="date123" href="http://218.28.71.220:9875/"><img alt="空气质量" src="${pageContext.request.contextPath }/top/index/ico_05.png"></a> <!--<A class=date123 href="http://211.142.122.60/">--><a href="http://tianqi.2345.com/xinxiang/53986.htm" target="_blank"><img alt="天气预报" src="${pageContext.request.contextPath }/top/index/ico_03.png"></a> </div>
+<div onmouseout="yin()" class="ifra" style="height: 200px; width: 1002px; position: absolute; left: 0px; display: none; top: 34px; background-color: rgb(204, 204, 204);z-index: 9999;"><iframe height="200" src="${pageContext.request.contextPath }/top/index/zwfw.html" width="1002" scrolling="no"></iframe></div></div></td></tr></tbody></table> 
 <style type="text/css"> 
 .flcxcon a{ padding-left:20px; margin-left:15px;} 
 /*.flcxoff{ float:left;} 
@@ -79,18 +79,18 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').show();
 $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeOut(50); 
 });</script>
 <!--主内容-->
-<div style="WIDTH: 1002px; MARGIN: 0px auto"><a href="http://www.henan.gov.cn/zt/2017zt/shijiuda/index.shtml" target="_blank"><img style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" src="./index/1510627656433.jpg"></a> </div>
+<div style="WIDTH: 1002px; MARGIN: 0px auto"><a href="http://www.henan.gov.cn/zt/2017zt/shijiuda/index.shtml" target="_blank"><img style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" src="${pageContext.request.contextPath }/top/index/1510627656433.jpg"></a> </div>
 <div class="maincon"><!--图片新闻-->
 <div class="picnew"><!--左侧-->
 <div class="picnewl">
     <div class="wrap">
         <div id="slideee">
             <ul class="list">
-                <li><a href="javascript:;"><img src="./imgs/index/1.png" alt=""></a><p style="text-align: center;">标题1</p></li>
-                <li><a href="javascript:;"><img src="./imgs/index/2.png" alt=""></a><p style="text-align: center;">标题2</p></li>
-                <li><a href="javascript:;"><img src="./imgs/index/3.png" alt=""></a><p style="text-align: center;">标题3</p></li>
-                <li><a href="javascript:;"><img src="./imgs/index/4.png" alt=""></a><p style="text-align: center;">标题4</p></li>
-                <li><a href="javascript:;"><img src="./imgs/index/5.png" alt=""></a><p style="text-align: center;">标题5</p></li>
+                <li><a href="javascript:;"><img src="${pageContext.request.contextPath }/top/imgs/index/1.png" alt=""></a><p style="text-align: center;">标题1</p></li>
+                <li><a href="javascript:;"><img src="${pageContext.request.contextPath }/top/imgs/index/2.png" alt=""></a><p style="text-align: center;">标题2</p></li>
+                <li><a href="javascript:;"><img src="${pageContext.request.contextPath }/top/imgs/index/3.png" alt=""></a><p style="text-align: center;">标题3</p></li>
+                <li><a href="javascript:;"><img src="${pageContext.request.contextPath }/top/imgs/index/4.png" alt=""></a><p style="text-align: center;">标题4</p></li>
+                <li><a href="javascript:;"><img src="${pageContext.request.contextPath }/top/imgs/index/5.png" alt=""></a><p style="text-align: center;">标题5</p></li>
             </ul>
         </div>
     </div> 
@@ -130,7 +130,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220144159170.html" target="_blank">
 <!--		-->
@@ -152,7 +152,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220143879326.html" target="_blank">
 <!--		-->
@@ -174,7 +174,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220143636903.html" target="_blank">
 <!--		-->
@@ -196,7 +196,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220143506349.html" target="_blank">
 <!--		-->
@@ -218,7 +218,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb4d476001e/20171220143410035.html" target="_blank">
 <!--		-->
@@ -262,7 +262,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb73a1c0038/20171220153294246.html" target="_blank">
 <!--		-->
@@ -284,7 +284,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb73a1c0038/20171220153147199.html" target="_blank">
 <!--		-->
@@ -306,7 +306,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb73a1c0038/20171220112100721.html" target="_blank">
 <!--		-->
@@ -328,7 +328,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb73a1c0038/20171219150272709.html" target="_blank">
 <!--		-->
@@ -350,7 +350,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb73a1c0038/20171219150054832.html" target="_blank">
 <!--		-->
@@ -394,7 +394,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb75a18003a/20171220152852154.html" target="_blank">
 <!--		-->
@@ -416,7 +416,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb75a18003a/20171220152511312.html" target="_blank">
 <!--		-->
@@ -438,7 +438,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb75a18003a/20171220152320110.html" target="_blank">
 <!--		-->
@@ -460,7 +460,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb75a18003a/20171219150374096.html" target="_blank">
 <!--		-->
@@ -482,7 +482,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="25">
-        <td width="10" style=" padding-left:5px;"><img src="./index/img_43.jpg"></td>
+        <td width="10" style=" padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left">
 		<a style=" font-size:14px; color:#000000; line-height:25px;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb75a18003a/20171219100980872.html" target="_blank">
 <!--		-->
@@ -506,220 +506,29 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 <div class="tabbertab_01 tabbertabhide_01 picnewrcon" tabindex_01="4">暂无信息</div></div></div></div><!--公示公告-->
 <div class="gsgg"><a class="gsggtit">公告公示</a><a class="more" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814acaf060114acb5c05d002a" target="_blank">更多&gt;</a> 
 <div class="gsggcon">
-
-
-
     <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
     <tbody><tr>
     <td>
     <div id="marqueediv8a818183604d69e4016052feb7b0132c" style="overflow: hidden; width: 222px; height: 240px;"><table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;"><tbody><tr><td>
     <table border="0" cellpadding="0" cellspacing="0" width="222">
-     <tbody><tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171204154605239.html" target="_blank">
-		                                                          
-		关于大气污染防治攻坚致市民的一封信	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171202104832424.html" target="_blank">
-		                                                          
-		新乡市人民政府关于实施城区机动车单双号限行的通告	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171124160740657.html" target="_blank">
-		                                                          
-		我市发出倡议：攻坚治霾全民参与美丽新乡你我共享	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171114092096758.html" target="_blank">
-		                                                          
-		关于市级河长及市级河长负责的河流所经县（市、区）河长名...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171108152359320.html" target="_blank">
-		                                                          
-		致全市新闻工作者的慰问信 	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171030112049864.html" target="_blank">
-		                                                          
-		新乡市地方金融监督管理局 关于新乡市中小企业信用担保有...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171026142956400.html" target="_blank">
-		                                                          
-		致全市环卫工人和环卫工作者的慰问信	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.henan.gov.cn/jrhn/system/2017/10/25/010745421.shtml" target="_blank">
-		                                                          
-		学习党的十九大精神有奖答题	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171024172298845.html" target="_blank">
-		                                                          
-		关于市政府主要领导预约接待人民群众来访的通告	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171017163118093.html" target="_blank">
-		                                                          
-		新乡市人民政府发展研究中心关于公布2017年度新乡市政...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-	<tr height="50"><td></td></tr>
-    </tbody></table>
-    </td></tr><tr><td>
-    <table border="0" cellpadding="0" cellspacing="0" width="222">
-     <tbody><tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171204154605239.html" target="_blank">
-		                                                          
-		关于大气污染防治攻坚致市民的一封信	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171202104832424.html" target="_blank">
-		                                                          
-		新乡市人民政府关于实施城区机动车单双号限行的通告	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171124160740657.html" target="_blank">
-		                                                          
-		我市发出倡议：攻坚治霾全民参与美丽新乡你我共享	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171114092096758.html" target="_blank">
-		                                                          
-		关于市级河长及市级河长负责的河流所经县（市、区）河长名...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171108152359320.html" target="_blank">
-		                                                          
-		致全市新闻工作者的慰问信 	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171030112049864.html" target="_blank">
-		                                                          
-		新乡市地方金融监督管理局 关于新乡市中小企业信用担保有...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171026142956400.html" target="_blank">
-		                                                          
-		致全市环卫工人和环卫工作者的慰问信	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.henan.gov.cn/jrhn/system/2017/10/25/010745421.shtml" target="_blank">
-		                                                          
-		学习党的十九大精神有奖答题	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171024172298845.html" target="_blank">
-		                                                          
-		关于市政府主要领导预约接待人民群众来访的通告	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-     <tr height="20">
-        <td width="10">&nbsp;·</td>
-        <td align="left">
-		<a style=" font-size:13px; line-height:23px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/4028815814acaf060114acb5c05d002a/20171017163118093.html" target="_blank">
-		                                                          
-		新乡市人民政府发展研究中心关于公布2017年度新乡市政...	
-		</a>
-		</td>
-    </tr>
-    <tr><td width="96%" align="center" class="dhbgwenzi" colspan="2"></td></tr>
-	<tr height="50"><td></td></tr>
-    </tbody></table>
+        <tbody>
+        <c:forEach var="varName"
+            items="${notice}">
+            <tr height="20">
+                <td width="10">&nbsp;·</td>
+                <td align="left">
+        		<a style=" font-size:13px; line-height:23px; color:#000000;" href="javascript:;" target="_blank">
+                ${varName.title}
+        		</a>
+        		</td>
+            </tr>
+            <tr>
+                <td width="96%" align="center" class="dhbgwenzi" colspan="2"></td>
+            </tr>
+        </c:forEach>
+    	<tr height="50"><td></td></tr>
+        </tbody>
+    </table>
     </td></tr></tbody></table></div>
     <script type="text/javascript" language="javascript">
     new Marquee('marqueediv8a818183604d69e4016052feb7b0132c',0,1,222,240,30,0,0);
@@ -733,7 +542,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 
 </div></div><!--信息公开-->
 <div class="biaoyu" style="HEIGHT: 159px"><!--<A href="http://www.wenming.cn/jwmsxf_294/zggygg/" target=_blank><IMG src="/upload/201510//20151015163344472.jpg"></A> 
---><img border="0" src="./index/1448937253449.jpg" usemap="#Map"><map id="Map" name="Map"><area href="http://www.wenming.cn/jwmsxf_294/zggygg/" shape="rect" coords="103,13,911,149"><area href="http://www.wenming.cn/specials/zxdj/hxjz/tsjzg/" shape="rect" coords="13,12,99,147"><area href="http://www.wenming.cn/jwmsxf_294/zggygg/" shape="rect" coords="913,13,989,148"></map></div>
+--><img border="0" src="${pageContext.request.contextPath }/top/index/1448937253449.jpg" usemap="#Map"><map id="Map" name="Map"><area href="http://www.wenming.cn/jwmsxf_294/zggygg/" shape="rect" coords="103,13,911,149"><area href="http://www.wenming.cn/specials/zxdj/hxjz/tsjzg/" shape="rect" coords="13,12,99,147"><area href="http://www.wenming.cn/jwmsxf_294/zggygg/" shape="rect" coords="913,13,989,148"></map></div>
 <div class="xxgk"><!--<A href="http://www.xxjjjcw.gov.cn/wenze/" target=_blank><IMG src="/upload/201611//20161130165639762.jpg" width=760 height=80></A>-->
 <div class="tabberlive_01">
 <ul style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
@@ -1006,7 +815,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 <div class="tabbertab_01 tabbertabhide_01 more1 " tabindex_01="2"><a class="more1" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814acaf060114acb7d91b003c" target="_blank">更多&gt;</a></div>
 <div class="tabbertab_01 tabbertabhide_01 more1 " tabindex_01="3"><a class="more1" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814acaf060114acb7fc62003e" target="_blank">更多&gt;</a></div>
 <div class="tabbertab_01 tabbertabhide_01 more1 " tabindex_01="4"><a class="more1" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=ff80808122c050240122c5d71fc40008" target="_blank">更多&gt;</a></div>
-<div class="tabbertab_01 zxgkcon " tabindex_01="1"><iframe height="186" marginheight="0" src="./index/zxgk1.html" frameborder="no" width="513" allowtransparency="" marginwidth="0" scrolling="no"></iframe></div>
+<div class="tabbertab_01 zxgkcon " tabindex_01="1"><iframe height="186" marginheight="0" src="${pageContext.request.contextPath }/top/index/zxgk1.html" frameborder="no" width="513" allowtransparency="" marginwidth="0" scrolling="no"></iframe></div>
 <div class="tabbertab_01 tabbertabhide_01 zxgkcon" tabindex_01="2">
 
 
@@ -1515,7 +1324,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 <a target="_blank" href="http://125.42.176.131/xxgk/xxgk/xxgklist.jsp?id=1207554298468&amp;deptid=101">社会救助</a>
 <a target="_blank" href="http://125.42.176.131/xxgk/xxgk/xxgklist.jsp?id=1207554328180">其他服务</a>
 <a target="_blank" href="http://125.42.176.131/xxgk/xxgk/xxgklist.jsp?id=1207554356395&amp;deptid=101">其它依法公开</a></div></div></div>
-<div class="flss"><a href="http://117.158.91.68:8083/index2.jspx?service=p" target="_blank"><img src="./index/1.jpg"></a></div></div><!--政务大厅-->
+<div class="flss"><a href="http://117.158.91.68:8083/index2.jspx?service=p" target="_blank"><img src="${pageContext.request.contextPath }/top/index/1.jpg"></a></div></div><!--政务大厅-->
 <div class="tabbertab_01 tabbertabhide_01 xxgkcon" tabindex_01="2">
 <div class="zwdt_l"><!--办事单位-->
 <div class="bsdw"><a class="bsdwtit">办事指南</a> 
@@ -2136,7 +1945,7 @@ $('.bannerFn1 li.f5 ul,.bannerFn1 li.f5 .down').stop(true, true).delay(50).fadeO
 
 
 </div></div><!--图标版块-->
-<div class="service"><a class="iconOne" style="MARGIN-RIGHT: 34px" href="http://117.158.91.68:8083/hdjl/wszx/toadd.jspx" target="_blank"><img src="./index/iconone_03.jpg"></a> <a class="iconOne" style="MARGIN-RIGHT: 34px" href="http://117.158.91.68:8083/presearch.jspx" target="_blank"><img src="./index/1513221840677.jpg"></a> <a class="iconOne" href="http://www.xxsxzfwzx.gov.cn/download.asp" target="_blank"><img src="./index/iconone_09.jpg"></a> </div></div><!--行政许可-->
+<div class="service"><a class="iconOne" style="MARGIN-RIGHT: 34px" href="http://117.158.91.68:8083/hdjl/wszx/toadd.jspx" target="_blank"><img src="${pageContext.request.contextPath }/top/index/iconone_03.jpg"></a> <a class="iconOne" style="MARGIN-RIGHT: 34px" href="http://117.158.91.68:8083/presearch.jspx" target="_blank"><img src="${pageContext.request.contextPath }/top/index/1513221840677.jpg"></a> <a class="iconOne" href="http://www.xxsxzfwzx.gov.cn/download.asp" target="_blank"><img src="${pageContext.request.contextPath }/top/index/iconone_09.jpg"></a> </div></div><!--行政许可-->
 <div class="xzxk" style="HEIGHT: 426px">
 <div class="tabberlive_01">
 <ul style="OVERFLOW: hidden; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
@@ -2152,22 +1961,22 @@ a{text-decoration: none}
 
 <div style="BORDER-TOP: #ccc 1px solid; HEIGHT: 330px; BORDER-RIGHT: #ccc 1px solid; WIDTH: 429px; BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid">
 <ul class="quan">
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=01" target="_blank"><img alt="" src="./index/012.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=01" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/012.png"> 
 <div>行政许可</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=02" target="_blank"><img alt="" src="./index/022.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=02" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/022.png"> 
 <div>行政处罚</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=03" target="_blank"><img alt="" src="./index/032.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=03" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/032.png"> 
 <div>行政强制</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=04" target="_blank"><img alt="" src="./index/042.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=04" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/042.png"> 
 <div>行政征收</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=05" target="_blank"><img alt="" src="./index/052.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=05" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/052.png"> 
 <div>行政给付</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=06" target="_blank"><img alt="" src="./index/062.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=06" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/062.png"> 
 <div style="MARGIN-TOP: 5px">行政检查</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=07" target="_blank"><img alt="" src="./index/072.png"> 
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=07" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/072.png"> 
 <div>行政确认</div></a></li>
-<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=14" target="_blank"><img alt="" src="./index/082.png"> 
-<div>其他职权</div></a></li></ul></div></div><a href="http://www.henan.gov.cn/zt/2017zt/shijiuda/index.shtml" target="_blank"><img style="WIDTH: 429px" src="./index/banner.png"></a> </div></div></div><!--政务服务-->
+<li><a href="http://120.194.216.88:88/admin/publicity/main.aspx?type_id=14" target="_blank"><img alt="" src="${pageContext.request.contextPath }/top/index/082.png"> 
+<div>其他职权</div></a></li></ul></div></div><a href="http://www.henan.gov.cn/zt/2017zt/shijiuda/index.shtml" target="_blank"><img style="WIDTH: 429px" src="${pageContext.request.contextPath }/top/index/banner.png"></a> </div></div></div><!--政务服务-->
 <div class="tabbertab_01 tabbertabhide_01 xxgkcon" tabindex_01="3">
 <div class="zwfw_l"><!--服务公民-->
 <div class="fwgm">
@@ -2266,7 +2075,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:15px; padding-left:7px;">
 		<a href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=ff8080811d47d8b9011d5fe76eea0102" target="_blank">
-		<img src="./index/1412953049548.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1412953049548.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -2278,7 +2087,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:15px; padding-left:7px;">
 		<a href="http://www.xinxiang.gov.cn/cjdh/gsdj/gsdj.jsp" target="_blank">
-		<img src="./index/1412953032953.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1412953032953.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -2290,7 +2099,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:15px; padding-left:7px;">
 		<a href="http://www.xinxiang.gov.cn/cjdh/sydj/sydj.jsp" target="_blank">
-		<img src="./index/1412953014652.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1412953014652.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -2306,7 +2115,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:15px; padding-left:7px;">
 		<a href="http://www.xinxiang.gov.cn/cjdh/hydj/hydj.jsp" target="_blank">
-		<img src="./index/1412952994020.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1412952994020.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -2318,7 +2127,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:15px; padding-left:7px;">
 		<a href="http://www.xinxiang.gov.cn/cjdh/hkdj/hjdj.jsp" target="_blank">
-		<img src="./index/1412952978852.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1412952978852.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -2430,7 +2239,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.xxbus.com/xxbus/gjSearch.do" target="_blank">
 		<!---->
@@ -2444,7 +2253,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="https://kyfw.12306.cn/otn/" target="_blank">
 		<!---->
@@ -2458,7 +2267,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.zzairport.com/index.php?a=flights" target="_blank">
 		<!---->
@@ -2472,7 +2281,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.youbian.com/" target="_blank">
 		<!---->
@@ -2490,7 +2299,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.tvmao.com/epg/program.jsp?p=CCTV&amp;c=CCTV1" target="_blank">
 		<!---->
@@ -2504,7 +2313,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.lottery.gov.cn/" target="_blank">
 		<!---->
@@ -2518,7 +2327,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.zhcw.com/" target="_blank">
 		<!---->
@@ -2532,7 +2341,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.hnditu.com/map.aspx?mapn=456000" target="_blank">
 		<!---->
@@ -2550,7 +2359,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://ha.122.gov.cn/" target="_blank">
 		<!---->
@@ -2564,7 +2373,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.chsi.com.cn/xlcx/" target="_blank">
 		<!---->
@@ -2578,7 +2387,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.xinaogas.com/" target="_blank">
 		<!---->
@@ -2592,7 +2401,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://site.baidu.com/list/wannianli.htm" target="_blank">
 		<!---->
@@ -2610,7 +2419,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.51booking.cn/" target="_blank">
 		<!---->
@@ -2624,7 +2433,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/ff80808123bde1170123c8980b870061/20090918001643516.html" target="_blank">
 		<!---->
@@ -2638,7 +2447,7 @@ a{text-decoration: none}
         <td align="left" width="25%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td style=" color:#ff0000; width:10px;"><img src="./index/5.jpg"></td>
+        <td style=" color:#ff0000; width:10px;"><img src="${pageContext.request.contextPath }/top/index/5.jpg"></td>
         <td align="left">
 		<a style="font-size:12px; line-height:24px; color:#000000;" href="http://www.xxzfgjj.com/query/index.aspx" target="_blank">
 		<!---->
@@ -2667,12 +2476,12 @@ a{text-decoration: none}
 
 
 
-</div></div><!--百件实事网上办--><a class="fwtd" href="http://qlqd.haxxsbb.gov.cn/" target="_blank"><img src="./index/20160105151553848.jpg"></a> <!--服务通道--><a class="fwtd" style="MARGIN-LEFT: 50px" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814acaf060114acbf1f790076" target="_blank"><img src="./index/fw_48.jpg"></a></div><!--公众参与-->
+</div></div><!--百件实事网上办--><a class="fwtd" href="http://qlqd.haxxsbb.gov.cn/" target="_blank"><img src="${pageContext.request.contextPath }/top/index/20160105151553848.jpg"></a> <!--服务通道--><a class="fwtd" style="MARGIN-LEFT: 50px" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814acaf060114acbf1f790076" target="_blank"><img src="${pageContext.request.contextPath }/top/index/fw_48.jpg"></a></div><!--公众参与-->
 <div class="tabbertab_01 tabbertabhide_01 xxgkcon" tabindex_01="4">
 <div class="gzcy_l"><!--市长信箱-->
 <div class="szxx">
 <div class="szxxtitl"></div><a class="szxxtit">市长信箱</a> 
-<div class="szxxtitr"><a href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835f3c8438015f4c637fc81eed" target="_blank"><img src="./index/gzcy_05.jpg"></a><a href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835f3c8438015f4c637fc81eed" target="_blank"><img src="./index/gzcy_03.jpg"></a></div>
+<div class="szxxtitr"><a href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835f3c8438015f4c637fc81eed" target="_blank"><img src="${pageContext.request.contextPath }/top/index/gzcy_05.jpg"></a><a href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835f3c8438015f4c637fc81eed" target="_blank"><img src="${pageContext.request.contextPath }/top/index/gzcy_03.jpg"></a></div>
 <div class="szxxcon">
     <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
     <tbody><tr>
@@ -2683,7 +2492,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835f3c8438015f752ddc236de7" target="_blank">占用公路，违章建筑</a></td>
         </tr>
 
@@ -2697,7 +2506,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835f3c8438015f75274b396dd5" target="_blank">投诉拉菲国际开发商</a></td>
         </tr>
 
@@ -2711,7 +2520,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835f3c8438015f613f83574c96" target="_blank">凤凰山公园收车费</a></td>
         </tr>
 
@@ -2725,7 +2534,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835ed660c4015ef2f5869b2289" target="_blank">扰民</a></td>
         </tr>
 
@@ -2739,7 +2548,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835ed0796e015ed1d359dd077e" target="_blank">腾飞和中海信达非法集资案最新进展</a></td>
         </tr>
 
@@ -2753,7 +2562,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835eb2aebc015ecdab0aa642e0" target="_blank">解放路法桐上出现大量悬铃木方翅网蝽</a></td>
         </tr>
 
@@ -2767,7 +2576,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835eb2aebc015ec79f381534a9" target="_blank">卫辉市华兴粉业有限公司收到货款不发货</a></td>
         </tr>
 
@@ -2781,7 +2590,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20">
-        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="./index/gz_10.jpg"></td>
+        <td width="10" style=" padding-left:5px; line-height:22px; padding-right:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_10.jpg"></td>
         <td align="left"><a style=" line-height:22px;" href="http://www.xinxiang.gov.cn/mailboxDetail.do?id=8a8181835e7e23ab015e93c5178a2649" target="_blank">凤泉区宝山大道新中大道交叉处没留非机动车道</a></td>
         </tr>
 
@@ -2816,7 +2625,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20171110082772414.html" target="_blank" title="关于《新乡市机动车停放服务收费管理实施细则》（征求意见稿）公开征求意见的通知">
 		<!---->
@@ -2837,7 +2646,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20170905150139054.html" target="_blank" title="新乡市人大常委会关于公开征集2018年度立法建议项目的公告">
 		<!---->
@@ -2858,7 +2667,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20170526103774751.html" target="_blank" title="《大东区空间发展协同总体规划（2016～2030）》征求公众意见">
 		<!---->
@@ -2879,7 +2688,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20170508163264772.html" target="_blank" title="市政府就《政府工作报告》征求市人大、市政协意见建议">
 		<!---->
@@ -2900,7 +2709,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20161014164863367.html" target="_blank" title="关于《新乡市网络预约出租汽车经营服务管理实施细则》公开征求意见的通知">
 		<!---->
@@ -2921,7 +2730,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/bd08ee8414e5cb9d0114e7fca9b5000c/20160823155614813.html" target="_blank" title="关于《新乡市人民政府部门公共服务事项清单》公开征求意见的通知">
 		<!---->
@@ -3006,7 +2815,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114150466109.html" target="_blank" title="国庆假期全市大气污染防治开展“零点行动”">
 		<!---->
@@ -3027,7 +2836,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114150486942.html" target="_blank" title="王登喜赴新乡县督导环保工作时强调:树立“先环保后生产”理念 推进转型升级 坚决打赢大气污染防治攻坚战">
 		<!---->
@@ -3048,7 +2857,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114145597367.html" target="_blank" title="王登喜赴新乡县督导环保工作时强调:树立“先环保后生产”理念 推进转型升级 坚决打赢大气污染防治攻坚战">
 		<!---->
@@ -3069,7 +2878,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114145519583.html" target="_blank" title="我市对大气污染防治攻坚工作再部署">
 		<!---->
@@ -3090,7 +2899,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114150407228.html" target="_blank" title="我市对大气污染防治攻坚工作再部署">
 		<!---->
@@ -3111,7 +2920,7 @@ a{text-decoration: none}
         <td align="left" width="100%">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="27"> 
-		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="./index/gz_33.jpg"></td>
+		<td width="10" style="color:#FF0000; padding-left:5px;"><img src="${pageContext.request.contextPath }/top/index/gz_33.jpg"></td>
         <td align="left">
 		<a style=" font-size:12px; line-height:26px; color:#333333;" href="http://www.xinxiang.gov.cn/sitegroup/root/html/8a8181834a5c9676014a750e562436bb/20161114150427974.html" target="_blank" title="舒庆在督导环保工作时强调：提高标准 精准发力 彻底整治 坚决打赢大气污染防治攻坚战">
 		<!---->
@@ -3136,7 +2945,7 @@ a{text-decoration: none}
 
 </div></div></div></div><!--沟通访谈-->
 <div class="gtft"><a class="gtfttit" style="WIDTH: 85px" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=4028815814c5bf730114c62a37d10021" target="_blank">沟通访谈 </a>
-<div style="POSITION: relative; LEFT: 150px"><a href="http://www.xinxiang.gov.cn/listCmsChatBasic.do"><img src="./index/20161222152742126.jpg"></a></div>
+<div style="POSITION: relative; LEFT: 150px"><a href="http://www.xinxiang.gov.cn/listCmsChatBasic.do"><img src="${pageContext.request.contextPath }/top/index/20161222152742126.jpg"></a></div>
 <div class="gtftcon">
 
 
@@ -3392,7 +3201,7 @@ a{text-decoration: none}
         <tbody><tr height="57">
         <td align="left">
 		<a style=" width:57px; height:57px; margin-left:5px;" href="http://www.xinxiang.gov.cn/listCmsChatBasic.do" target="_blank">
-		<img src="./index/1481607031618.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1481607031618.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -3404,7 +3213,7 @@ a{text-decoration: none}
         <tbody><tr height="57">
         <td align="left">
 		<a style=" width:57px; height:57px; margin-left:5px;" href="http://www.haaic.gov.cn/lm/front/mailwrite.jsp?groupid=0029&amp;sysid=002&amp;sess=0" target="_blank">
-		<img src="./index/1418317310338.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1418317310338.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -3416,7 +3225,7 @@ a{text-decoration: none}
         <tbody><tr height="57">
         <td align="left">
 		<a style=" width:57px; height:57px; margin-left:5px;" href="http://www.xxsxzfwzx.gov.cn/Feedback.asp" target="_blank">
-		<img src="./index/1418317240736.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1418317240736.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -3428,7 +3237,7 @@ a{text-decoration: none}
         <tbody><tr height="57">
         <td align="left">
 		<a style=" width:57px; height:57px; margin-left:5px;" href="http://www.xxzx.gov.cn/UserCenter/login.aspx" target="_blank">
-		<img src="./index/1418317112712.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1418317112712.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -3440,7 +3249,7 @@ a{text-decoration: none}
         <tbody><tr height="57">
         <td align="left">
 		<a style=" width:57px; height:57px; margin-left:5px;" href="http://wsxfdt.hnxf.gov.cn/sy/initPlatform.action" target="_blank">
-		<img src="./index/1471506984719.jpg" border="0/">
+		<img src="${pageContext.request.contextPath }/top/index/1471506984719.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -3514,7 +3323,7 @@ a{text-decoration: none}
 
 
 
-</div><a class="xinxgkconpic" style="MARGIN-TOP: 30px" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=bd08ee8414d8e2830114da1080b8006f" target="_blank"><img src="./index/zj_13.jpg"></a><a class="xinxgkconpic" style="MARGIN-TOP: 30px" href="http://www.xxnantaihang.com/" target="_blank"><img src="./index/zj_18.jpg"></a></div></div><!--地理位置-->
+</div><a class="xinxgkconpic" style="MARGIN-TOP: 30px" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=bd08ee8414d8e2830114da1080b8006f" target="_blank"><img src="${pageContext.request.contextPath }/top/index/zj_13.jpg"></a><a class="xinxgkconpic" style="MARGIN-TOP: 30px" href="http://www.xxnantaihang.com/" target="_blank"><img src="${pageContext.request.contextPath }/top/index/zj_18.jpg"></a></div></div><!--地理位置-->
 <div class="dlwz">
 <div class="tabberlive_01">
 <ul style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
@@ -3537,7 +3346,7 @@ a{text-decoration: none}
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20" style=" padding-left:5px;">
 		<td width="110">	
-		<img width="110" height="140" border="0" src="./index/1413023258286.jpg">
+		<img width="110" height="140" border="0" src="${pageContext.request.contextPath }/top/index/1413023258286.jpg">
 		</td>
         <td width="260" align="left" style=" font-size:13px; color:#333333; line-height:25px; padding-left:5px; text-indent:2em;">
 		
@@ -3671,7 +3480,7 @@ a{text-decoration: none}
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20" style=" padding-left:5px;">
 		<td width="110">	
-		<img width="110" height="140" border="0" src="./index/1416243894380.gif">
+		<img width="110" height="140" border="0" src="${pageContext.request.contextPath }/top/index/1416243894380.gif">
 		</td>
         <td width="260" align="left" style=" font-size:13px; color:#333333; line-height:25px; padding-left:5px; text-indent:2em;">
 		
@@ -3759,7 +3568,7 @@ a{text-decoration: none}
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20" style=" padding-left:5px;">
 		<td width="110">	
-		<img width="110" height="140" border="0" src="./index/1416243917503.jpg">
+		<img width="110" height="140" border="0" src="${pageContext.request.contextPath }/top/index/1416243917503.jpg">
 		</td>
         <td width="260" align="left" style=" font-size:13px; color:#333333; line-height:25px; padding-left:5px; text-indent:2em;">
 		
@@ -3854,7 +3663,7 @@ a{text-decoration: none}
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20" style=" padding-left:5px;">
 		<td width="110">	
-		<img width="110" height="140" border="0" src="./index/1416243506459.jpg">
+		<img width="110" height="140" border="0" src="${pageContext.request.contextPath }/top/index/1416243506459.jpg">
 		</td>
         <td width="260" align="left" style=" font-size:13px; color:#333333; line-height:25px; padding-left:5px; text-indent:2em;">
 		
@@ -3942,7 +3751,7 @@ a{text-decoration: none}
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tbody><tr height="20" style=" padding-left:5px;">
 		<td width="110">	
-		<img width="110" height="140" border="0" src="./index/1415984056226.jpg">
+		<img width="110" height="140" border="0" src="${pageContext.request.contextPath }/top/index/1415984056226.jpg">
 		</td>
         <td width="260" align="left" style=" font-size:13px; color:#333333; line-height:25px; padding-left:5px; text-indent:2em;">
 		
@@ -4027,10 +3836,10 @@ a{text-decoration: none}
 <tbody>
 <tr>
 <td>
-<form class="sousuo" onsubmit="return formsubmitChack();" method="post" name="searchTop" action="http://www.xinxiang.gov.cn/searchEngine.do" target="_blank"><input class="searText" name="cicontentIndex"><input type="hidden" value="cicontentIndex" name="searchType"><input class="searBtn" src="./index/img_ny_66.jpg" type="image"></form></td></tr>
+<form class="sousuo" onsubmit="return formsubmitChack();" method="post" name="searchTop" action="http://www.xinxiang.gov.cn/searchEngine.do" target="_blank"><input class="searText" name="cicontentIndex"><input type="hidden" value="cicontentIndex" name="searchType"><input class="searBtn" src="${pageContext.request.contextPath }/top/index/img_ny_66.jpg" type="image"></form></td></tr>
 <tr>
 <td>
-<form class="sousuo" onsubmit="return formsubmitChackK();" method="post" name="searchTopK" action="http://www.xinxiang.gov.cn/searchEngine.do" target="_blank"><input class="searText" name="cicontentIndex"><input type="hidden" value="kz" name="searchType"><input type="hidden" value="0" name="siteid"><input class="searBtn" src="./index/js_06.jpg" type="image"></form></td></tr>
+<form class="sousuo" onsubmit="return formsubmitChackK();" method="post" name="searchTopK" action="http://www.xinxiang.gov.cn/searchEngine.do" target="_blank"><input class="searText" name="cicontentIndex"><input type="hidden" value="kz" name="searchType"><input type="hidden" value="0" name="siteid"><input class="searBtn" src="${pageContext.request.contextPath }/top/index/js_06.jpg" type="image"></form></td></tr>
 <tr></tr></tbody></table>
 <table>
 <tbody>
@@ -4046,7 +3855,7 @@ a{text-decoration: none}
     <td align="right">
         <table border="0" cellpadding="0" cellspacing="0" width="98%">
         <tbody><tr>
-		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="./index/img_43.jpg"></td>
+		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left" width="100%" height="20">
 		     <a style=" font-size:12px; color:#333333; line-height:20px; padding-left:10px;" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835fb36dab015fb4a8240e02bf" target="_blank">学习宣传贯彻党的十九大精神</a>
         </td>
@@ -4054,7 +3863,7 @@ a{text-decoration: none}
         </tbody></table>
         <table border="0" cellpadding="0" cellspacing="0" width="98%">
         <tbody><tr>
-		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="./index/img_43.jpg"></td>
+		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left" width="100%" height="20">
 		     <a style=" font-size:12px; color:#333333; line-height:20px; padding-left:10px;" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835de31aa4015e073ec40d4292" target="_blank">标本兼治以案促改工作</a>
         </td>
@@ -4062,7 +3871,7 @@ a{text-decoration: none}
         </tbody></table>
         <table border="0" cellpadding="0" cellspacing="0" width="98%">
         <tbody><tr>
-		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="./index/img_43.jpg"></td>
+		<td width="10" style=" padding-left:5px; padding-right:5px; line-height:20px;"><img src="${pageContext.request.contextPath }/top/index/img_43.jpg"></td>
         <td align="left" width="100%" height="20">
 		     <a style=" font-size:12px; color:#333333; line-height:20px; padding-left:10px;" href="http://www.xinxiang.gov.cn/viewCmsCac.do?cacId=8a8181835c9f038c015ca07a25e704b6" target="_blank">政府网站抽查情况专栏</a>
         </td>
@@ -4084,7 +3893,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:1px; padding-left:5px;">
 		<a href="http://1.192.156.90:1032/sitesources/xxszf/page_pc/xxgk/index.html" target="_blank" title="财政资金预决算公开平台">
-		<img width="209" height="51" src="./index/1504688377336.jpg" border="0/">
+		<img width="209" height="51" src="${pageContext.request.contextPath }/top/index/1504688377336.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -4100,7 +3909,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:1px; padding-left:5px;">
 		<a href="http://120.194.216.88:88/admin/publicity/main.aspx" target="_blank" title="行政权力清单">
-		<img width="209" height="51" src="./index/1507858872322.jpg" border="0/">
+		<img width="209" height="51" src="${pageContext.request.contextPath }/top/index/1507858872322.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -4116,7 +3925,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:1px; padding-left:5px;">
 		<a href="http://www.xxzyz.com/" target="_blank" title="志愿服务">
-		<img width="209" height="51" src="./index/1414670092869.jpg" border="0/">
+		<img width="209" height="51" src="${pageContext.request.contextPath }/top/index/1414670092869.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -4132,7 +3941,7 @@ a{text-decoration: none}
         <tbody><tr height="20">
         <td align="left" style=" padding-top:1px; padding-left:5px;">
 		<a href="http://www.hnhhsd.com/news2/daqihuanjing" target="_blank" title="大气污染综合治理">
-		<img width="209" height="51" src="./index/20170930111202832.jpg" border="0/">
+		<img width="209" height="51" src="${pageContext.request.contextPath }/top/index/20170930111202832.jpg" border="0/">
 		</a>
 		</td>
         </tr>
@@ -6321,15 +6130,15 @@ a{text-decoration: none}
 <P>&nbsp;</P></DIV--></td><!--TD class=context width=39>&nbsp;</TD--></tr>
 <tr>
 <td rowspan="3">
-<span id="_ideConac"><a href="http://bszs.conac.cn/sitename?method=show&id=09D758EB71F75142E053012819AC8CD8" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="./index/red.png" data-bd-imgshare-binded="1"></a></span>
+<span id="_ideConac"><a href="http://bszs.conac.cn/sitename?method=show&id=09D758EB71F75142E053012819AC8CD8" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="${pageContext.request.contextPath }/top/index/red.png" data-bd-imgshare-binded="1"></a></span>
 &nbsp;&nbsp;&nbsp;</td>
 <td colspan="2">
 <div align="center">新乡市人民政府办公室主办　新乡市人民政府信息中心建设与维护&nbsp;&nbsp;&nbsp; <br>地址：新乡市人民东路甲1号&nbsp;&nbsp; <font face="Verdana">网站维护电话：0373-3696062</font></div>
 <div align="center"><font face="Verdana">邮箱：<a href="mailto:zfxxzx@xinxiang.gov.cn">zfxxzx@xinxiang.gov.cn</a></font><br></div></td>
-<td rowspan="3"><a href="http://www.xinxiang.cyberpolice.cn/index2.jsp"><img border="0" src="./index/chinavvv_0709120916546560.gif"></a> </td>
+<td rowspan="3"><a href="http://www.xinxiang.cyberpolice.cn/index2.jsp"><img border="0" src="${pageContext.request.contextPath }/top/index/chinavvv_0709120916546560.gif"></a> </td>
 <td rowspan="3">
 <div style="MARGIN-LEFT: 10px">
-<script id="_jiucuo_" src="./index/jiucuo.js" sitecode="4107000040"></script><span id="_span_jiucuo"><img onclick="Link(&#39;4107000040&#39;)" style="margin:0;border:0;cursor: pointer;" src="./index/jiucuo.png"></span>
+<script id="_jiucuo_" src="${pageContext.request.contextPath }/top/index/jiucuo.js" sitecode="4107000040"></script><span id="_span_jiucuo"><img onclick="Link(&#39;4107000040&#39;)" style="margin:0;border:0;cursor: pointer;" src="${pageContext.request.contextPath }/top/index/jiucuo.png"></span>
 </div></td></tr>
 <tr>
 <td width="364">
@@ -6338,8 +6147,8 @@ a{text-decoration: none}
 <tr>
 <td colspan="2">
 <div align="center">建议使用：1024*768分辨率&nbsp;&nbsp;16位以上颜色&nbsp; 技术支持：山谷网络.&nbsp; </div>
-<div align="center"><a style="LINE-HEIGHT: 20px; DISPLAY: inline-block; HEIGHT: 25px; TEXT-DECORATION: none" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41070202000236" target="_blank"><img border="0" src="./index/20160608093422309.jpg">&nbsp;&nbsp; 豫公网安备 41070202000236号</a></div></td></tr></tbody></table></td></tr></tbody></table>
-<script src="./js/index/Mds.onePic.1.0.js" type="text/javascript"></script>
+<div align="center"><a style="LINE-HEIGHT: 20px; DISPLAY: inline-block; HEIGHT: 25px; TEXT-DECORATION: none" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41070202000236" target="_blank"><img border="0" src="${pageContext.request.contextPath }/top/index/20160608093422309.jpg">&nbsp;&nbsp; 豫公网安备 41070202000236号</a></div></td></tr></tbody></table></td></tr></tbody></table>
+<script src="${pageContext.request.contextPath }/top/js/index/Mds.onePic.1.0.js" type="text/javascript"></script>
 <script>
     $('#slideee').MdsSlideFade({
         pageNum: true,time: '3000'
